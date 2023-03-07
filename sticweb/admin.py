@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Message, Usersinfo, Solutions
-from .models import Usersinfo, demandesolution
+from .models import demandesolution
 # Register your models here.
 
 
