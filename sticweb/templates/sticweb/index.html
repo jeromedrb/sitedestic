@@ -1,0 +1,629 @@
+{% load static %}
+
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Shib'ah Tic Conception</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
+
+	<!-- Swiper CSS -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style2.css' %}">
+	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+	<header>
+		<header>
+			<a href="#" class="logo"><span>S</span>hib'ah Tic Conception</a>
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="navbar">
+				<li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+				<li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+				<li><a href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+				<li><a href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
+				<li><a href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
+				<li><a href="boutique.html" onclick="toggleMenu();">Boutique</a></li>
+				<a href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a>
+			</ul>
+		</header>
+	</header>
+
+	<div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade" >
+			<div class="txt ">
+				<!--
+				<div class="blockadmin glow">
+
+				</div> -->
+					<img src="{% static 'sticweb/images/DEvpro.png' %}" alt="" class="imgs1">
+
+				<h1></h1>
+				<p></p>
+			</div>
+
+			<img src="{% static 'sticweb/images/bacgrund1.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<img src="{% static 'sticweb/images/site pro.png' %}" alt="" class="imgs2">
+				<h1></h1>
+				<p></p>
+			</div>
+			<img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<img src="{% static 'sticweb/images/installation.png' %}" alt="" class="imgs1">
+				<h1></h1>
+				<p></p>
+			</div>
+			<img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<img src="{% static 'sticweb/images/visuel qualité.png' %}" alt="" class="imgs2">
+			</div>
+			<img src="{% static 'sticweb/images/bacgvisueml.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<img src="{% static 'sticweb/images/maintenace.png' %}" alt="" class="imgs1">
+
+			</div>
+			<img src="{% static 'sticweb/images/bacgrMainten.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
+		</div>
+		<!-- /fade css -->
+
+		<!-- onclick js
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	-->
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
+
+	<script src="{% static 'sticweb/jsfile.js' %}"></script>
+	<div class='apropos' id="apropos"  style="padding-bottom: 30px;">
+		<h2 class="titre-texte" style="color: rgb(15, 10, 10); padding-left: 10px; text-align: center;" ><span>A propos</span></h2>
+
+		<img src="{% static 'sticweb/images/le digital.png' %}" class="col40" style="padding-left: 16px; border-radius: 15px;">
+		<div class="col60apro float-right " >
+
+				<div class="blockanim glow">
+					<p style="text-align: justify; padding-right: 30px; color: white; padding-left: 10px; padding-right: 10px; "  > <br>
+						L'histoire du monde est marquée par plusieurs ères, dont l'ère industrielle qui est la plus récente et proche de
+						notre époque. Ceux qui n'ont pas réussi à s'adapter à cette époque ont été oubliés par l'histoire.
+						Nous sommes maintenant à l'ère de l'information et pour ceux qui veulent rester compétitifs dans cette
+						course effrénée, l'adaptation est essentielle. C'est là qu'intervient Shib'ah Tic Conception,
+						notre entreprise informatique, qui vous accompagne dans cette transition numérique.
+						Nos services englobent tous les aspects de l'informatique et du numérique, du développement de logiciels
+						personnalisés à la configuration et au câblage de réseaux, en passant par la conception graphique.
+						Shib'ah Tic Conception est un acteur incontournable pour votre développement et votre réussite.
+						Rejoignez-nous dès aujourd'hui et devenez notre partenaire privilégié.
+						<br> <span style="color: blueviolet; "> Vous aussi devenez partenaire de Shib'ah Tic Conception aujourd'hui. </span>
+					</p>
+
+				</div>
+		</div>
+		</div>
+	<div class="apro" >
+
+
+</div>
+
+
+
+<div>
+
+</div>
+
+
+
+
+
+
+
+	<section class="menu" id="menu" >
+
+		<h2 class="titre-texte" style="color: rgb(14, 13, 13); padding-left: 10px; text-align: center;" >
+			<span>Nos services</span></h2>
+		<div class="contenu">
+
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/cros platfm.png' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Développement d'application cross plateform</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/cablage_reseau.jpg' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Réseau</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/cameras-dome-ptz-ip-professionnel-magasin-comerces-.jpg' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Visiosurveillance</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/domotique.png' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Domotique</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/tel ip.jpg' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Télephonie IP</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/pc repa.png' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Maintenance Informatique</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/formattt.jfif' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Formation</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imbox">
+					<img src="{% static 'sticweb/images/electroniq.jpg' %}" alt="">
+				</div>
+				<div class="text">
+					<h3>Electronique embarqué</h3>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 <div class="titre">
+		<a href="{% url 'services' %}" class="btn1">Voir Plus </a>
+	 </div>
+	</section>
+		<div class="separateur">
+
+		</div>
+
+		<div class="titre">
+			<h2 class="titre-texte"><span>Solutions déjà disponible</span></h2>
+			<p>Nous avons déja des solutions disponible sur le marché. <br> </p>
+		</div>
+
+
+
+ <div class="slide-container swiper">
+
+        <div class="slide-content">
+            <div class="swiper-wrapper">
+				{% for Solutions in solutions %}
+                <div class="card swiper-slide">
+                    <div class="image-content">
+						{% if Solutions.image %}
+    			<img src="{{ Solutions.image.url }}" alt="" >
+					{% endif %}
+
+
+					</div>
+                    <div class="card-content">
+                        <h2 class="title">{{ Solutions.name }}</h2>
+                        <p class="desc">{{ Solutions.title }}</p>
+
+						<button class="button"><a href="{{ Solutions.get_absolute_url }}" style="text-decoration: none; color:white;">voir plus </a></button>
+                    </div>
+                </div>
+  {% endfor %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+	 </div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+  var swiper = new Swiper('.slide-content', {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    loopAdditionalSlides: 2,
+    centeredSlides: true,
+    fade: true,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      520: { slidesPerView: 2 },
+      950: { slidesPerView: 3 },
+    },
+    autoplay: {
+      delay: 3000, // Temps en millisecondes entre chaque slide
+      disableOnInteraction: false, // Permet d'empêcher l'autoplay de s'arrêter lors d'une interaction utilisateur (par exemple, lorsqu'il clique sur une pagination)
+    },
+  });
+</script>
+
+
+
+
+<!--
+
+	<div class="cover">
+	<img class="imglogo" src="logopng.png"/>
+	<div class="coverContact">
+<p><a href="mailto=shibaticconception.com?subject=Depuis%20ici">shibaticconception.com<a/></p>
+<p><a href="tel=+22664367284">+2266565656<a/></p>
+
+	</div>
+
+
+<h1>SHIB'AH TIC CONCEPTION<h1/>
+<p>Specialiste des solutions digitale<p/>
+<div style="text-align: center;">
+<a class="btn-contact" href="#">NOUS CONTACTER<a/>
+</div>
+</div>
+
+<div class="Section1">	  -->
+
+<!--</div>	-->
+
+<!--<img style="Width:100%" src="div1.png" />-->
+<section class='SectionProjet' id="mainten" style="background-color: #5e91c0;">
+
+	<img src="{% static 'sticweb/images/m_1-removebg-preview.png' %}" class="col40" style="padding-left: 16px; border-radius: 15px;">
+	<div class="col60 float-right co60" style="padding-left: 5px; text-align: justify;">
+<h2 class="titre-texte" style=" padding-left: 10px; text-align: justify;" ><span>Maintenance Informatique</span></h2>
+<h3 class="titre-h3" style=" padding-left: 10px; text-align: justify;" ><span>Hardware and software solution</span></h3>
+
+			<p class="titre-p" style="padding-left: 10px; padding-right: 30px; text-align: justify;" >
+			 De la résolution de pannes matérielles aux problèmes logiciels complexes, nos techniciens se font un devoir de fournir le meilleur service possible pour vous garantir un fonctionnement optimal de votre équipement.
+
+		Chez Shibaticconception, nous prenons à cœur la satisfaction de nos clients et nous mettons tout en œuvre pour que chaque interaction avec notre équipe de maintenance soit agréable et fructueuse. Nous croyons que chaque client mérite un sourire et un service personnalisé de qualité supérieure.
+
+			Nous sommes déterminés à construire un avenir meilleur pour nos clients et à leur fournir des solutions technologiques avancées pour améliorer leur efficacité et leur productivité. Si vous cherchez une équipe de maintenance informatique fiable et compétente, n'hésitez pas à nous contacter pour discuter de vos besoins.
+			  <br>
+
+</p>
+<div>
+<div>
+	<a href="#contact" class="btnContactNs aanim" >
+		<span class="awraper"> </span>
+
+			<span class="aText">Nous contacter </span>
+
+	</a>
+</div>
+</div>
+	</div>
+	</section>
+
+
+
+
+
+	<div class='Cablage' id="Cablage">
+
+		<img src="{% static 'sticweb/images/resoos.jpg' %}" class="col40" style="padding-right: 5px;">
+		<div class="col60 float-right " style="padding-left: 1px; ">
+<h2 class="titre-texte" style=" padding-left: 10px; text-align: justify;">
+		<span>	Cablage réseau et installation de systeme domotique </span>
+		</h2>
+			<h3 class="titre-h3" style=" padding-left: 10px; text-align: justify; color: #c8cbc9;" >
+				<span>Découvrez la tranquillité d'esprit et le confort </span></h3>
+				<p class="titre-p" style=" text-align: justify; padding-left: 10px;">
+					Si vous cherchez à installer une nouvelle infrastructure réseau, vous aurez
+besoin de l'expertise de professionnels
+qualifiés pour mener à bien votre projet de maintenance réseau.
+Chez Shib"ah TIC Conception, nous avons l'expertise
+et les compétences nécessaires
+pour répondre à vos besoins
+et vous fournir les solutions les plus avancées et les plus fiables
+<br> <br>
+En tant qu'entreprise innovante, nous croyons que l'intelligence artificielle et la domotique sont
+les clés pour améliorer votre qualité de vie et votre confort chez vous.
+Nous nous engageons à vous aider à intégrer tous les automatismes de sécurité nécessaires, tels que
+des caméras de surveillance et des systèmes d'alarme, pour vous offrir une maison intelligente et sécurisée. Imaginez pouvoir contrôler tous les équipements
+de votre maison depuis votre smartphone ou même en utilisant votre voix.
+Optez dès aujourd'hui pour l'innovation et la technologie de pointe avec
+Shibaticconception, et découvrez la tranquillité d'esprit et le confort que nous
+pouvons vous offrir.
+					<br> Merci de nous faire confiance
+					<div>
+<div>
+	<a href="#contact" class="btnContactNs aanim" >
+		<span class="awraper"> </span>
+
+			<span class="aText" style="">Nous contacter </span>
+
+	</a>
+</div>
+</div>
+								</p>
+
+
+
+		</div>
+		</div>
+
+
+
+	<div class='SectionDesign'>
+
+		<img src="{% static 'sticweb/images/creation_graphique.png' %}" class="col40">
+		<div class="col60 float-right" style="padding-left: 16px;">
+<h2 class="titre-texte" style=" padding-left: 10px; text-align: justify;">
+		<span> Conception de visuel </span>
+		</h2>
+			<h3 class="titre-h3" style=" padding-left: 10px; text-align: justify; color:#1c3350;" >
+				<span> <br> <b> Des visuels de qualité au gout du jour </b></span></h3>
+		<p class="titre-p" style="text-align: justify; color:#1c3377; padding-left: 10px;">
+			Shib'ah Tic Conception offre des services de conception graphique de qualité supérieure pour
+			répondre à tous vos besoins en matière de design, tels que <span style="color:#F56926;"> la création d'affiches, de logos,
+			de cartes de visite, de montages vidéo et plus encore. </span> Nous sommes fiers de notre équipe de
+			graphistes talentueux et passionnés qui créent des designs uniques et innovants pour améliorer
+			l'image de votre entreprise ou de votre marque. Contactez-nous dès aujourd'hui pour découvrir
+			comment nous pouvons vous aider
+			à donner vie à vos idées de conception.
+	<br><br>
+			 Vous aussi Exigez la qualité, <span style="color: rgb(10, 10, 10);"> <b> exigez shib'ah Tic Conception</b> </span>.
+
+		<br>
+		</p>
+
+<div>
+<div>
+	<a href="#contact" class="btnContactNs aanim" >
+		<span class="awraper"> </span>
+
+			<span class="aText" style="color:#1c3350;">Nous contacter </span>
+
+	</a>
+</div>
+</div>
+
+		</div>
+
+		</div>
+
+
+<div class="sectionl">
+	<div class="fram">
+		<table style="width: 100%;">
+			<tr>
+				<td valign="top" align="center">
+					<img src="{% static 'blogs/images/logo.jpg' %}" style="width: 100px;">
+				</td>
+				<td>
+					<p>Votre meilleure allié  <br>
+					Exigez des pro pour numeriser votre organisation <br>
+					Retrouver nous sur Map <a href=""></a></p>
+
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<script src="{% static 'sticweb/slider.js' %}"></script>
+<section class="temoignage" id="temoignage">
+    <div class="titre blanc">
+        <h2 class="titre-texte">Que Disent Nos <span>C</span>lients</h2>
+        <p>Quelques avis de nos clients satisfaits de nos solutions et services. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./imagetemoins/t1.jpeg" alt="">
+            </div>
+            <div class="text">
+                <p>J'ai eu la chance de pouvoir utiliser le logiciel de gestion des centres de santé Ekeney, et je suis ravi de témoigner que ce produit a
+					largement dépassé nos attentes. Nous étions confrontés à des défis majeurs concernant la gestion de la caisse et de la comptabilité, mais grâce à ce logiciel, nous avons considérablement simplifié notre quotidien.
+ Il nous permet de gagner du temps et d'optimiser nos processus, ce qui est essentiel pour notre structure.</p>
+                <h3>M. Joel OUEDRAOGO</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./imagetemoins/t2.jpg" alt="">
+            </div>
+            <div class="text" style="text-align: center;">
+                <p>Le logiciel GF-PRO s'est avéré être une solution parfaitement adaptée à nos besoins en matière de formation
+					professionnelle, ce qui a suscité une grande satisfaction de la part de notre équipe. Je suis
+					particulièrement émerveillé par la capacité de l'entreprise à maintenir une innovation constante
+					dans la conception de ses solutions, ce qui nous permet de rester à la pointe de notre domaine
+					d'activité.
+				</GF-PRO>.</p>
+                <h3>Souleymana SANOU</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./imagetemoins/t3.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Depuis deux ans, je confie mes travaux de maintenance à Shib'ah Tic conception et j'ai toujours
+					été entièrement satisfait de leurs solutions,
+					qu'il s'agisse de résoudre des pannes matérielles, des problèmes logiciels ou système.</p>
+                <h3>Jean Noel</h3>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+<section class="contact" id="contact">
+	<div class="titre noir">
+		<h2 class="titre-text"><span>C</span>ontact</h2>
+		<p>Veuillez nous laisser un message et notre equipe prendra attache avec vous dans les 12h qui suivent</p>
+	</div>
+	<div class="formulaire">
+	<form method="post" class="formulair">
+    {% csrf_token %}
+	<div class="contactform">
+		<h3>Envoyer un message</h3>
+		<div class="inputboite" >
+			{{ form.name.label_tag }}
+			{{ form.name }}
+
+		</div>
+		<div class="inputboite">
+		   {{ form.telephone.label_tag }}
+			{{ form.telephone }}
+		</div>
+		<div class="inputboite">
+		   {{ form.email.label_tag }}
+			{{ form.email }}
+		</div>
+		<div class="inputboite">
+		   {{ form.message.label_tag }}
+			{{ form.message }}
+		</div>
+		<div class="inputboite">
+
+			<input type="submit" value="envoyer">
+		</div>
+	</div>
+		</form>
+		</div>
+</section>
+		<section class="Tel" id="Tel">
+
+	<div class="contenu">
+	<div class="box">
+		<div>
+			<p >Adresse</p> <br>
+		<a href="" >Burkina faso</a> <br>
+		<a href="">Bobo-Dioulasso</a>
+		</div>
+
+	</div>
+	<div class="box">
+		<div>
+			<p >Téléphone : <br> <br> </p>
+			<a href="tel=+22664367284" >+22664367284<a/>
+
+		</div>
+
+	</div>
+	<div class="box">
+		<div>
+			<p >Email : <br> <br> </p>
+			<a href="mailto=shibaticconception.com?subject=Depuis%20ici" >shibaticconception@gmail.com<a/>
+
+		</div>
+	</div>
+	<div class="box">
+		<div class="box1">
+			<p >Suivez nous sur  <br> <br> </p>
+			<ul class="basul">
+				<li class="basli">
+					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
+						<img src="{% static 'sticweb/images/facebook.png' %}" alt="">
+					</a>
+				</li>
+				<li class="basli">
+					<a href="https://wa.me/+22664367284" target="_blank">
+						<img src="{% static 'sticweb/images/whatsapp.png' %}" alt="">
+					</a>
+
+				</li>
+
+				<li class="basli">
+					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
+						<img src="{% static 'sticweb/images/instagram.png' %}" alt="">
+					</a>
+
+
+
+				</li>
+				<li class="basli">
+					<a href="https://www.linkedin.com/in/shibah-tic-conception-83949a263/" target="_blank">
+						<img src="{% static 'sticweb/images/linkedin.png' %}" alt="">
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	</div>
+	</section>
+
+<div class="copyright">
+<p>
+	©shiba'ah Tic Conception. Tous droits réservés - Politique de confidentialité
+	- Mentions Légales <br> - Cookies - Mention d’information applications
+</p>
+</div>
+<script type="text/javascript">
+	window.addEventListener('scroll', function(){
+		const header =document.querySelector('header');
+		header.classList.toggle("sticky", window.scrollY > 0 );
+	});
+
+	function toggleMenu(){
+		const tmenuToggle = document.querySelector('.menuToggle');
+		const navbar = document.querySelector('.navbar');
+		navbar.classList.toggle('active');
+		menuToggle.classList.toggle('active');
+	}
+</script>
+
+
+
+
+
+</body>
+</html>

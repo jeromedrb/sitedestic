@@ -1,0 +1,28 @@
+/* Google Fonts - Poppins max-width: 1120px; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+.slide-container{ width: 100%; padding: 40px 0; }
+.slide-content{margin: 0 40px; overflow: hidden; border-radius: 25px; padding: 10px; height: 380px;}
+
+
+.card{background-color: #FFF; border: solid 1px #ffffff; box-shadow: 0 4px 6px #00000075; }
+.image-content, .card-content{display: flex; flex-direction: column; padding: 10px 14px; }
+.image-content{position: relative; height: 180px; overflow: hidden; row-gap: 5px; padding: 0; }
+.card-img{height: 100%; width: 100%; object-fit: cover; }
+
+
+.title{font-size: 24px; margin-bottom: 10px; font-weight: 500; color: #333; }
+.title, .description{display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden; -webkit-box-orient: vertical; }
+.description{-webkit-line-clamp: 4; font-size: 14px; color: #707070; }
+.button{border: none; font-size: 16px; color: #FFF; padding: 8px 16px; background-color: #267df2;
+    border-radius: 6px; margin: 10px 0; cursor: pointer; transition: all 0.3s ease; }
+.button:hover{background: #265DF2; }
+.swiper-button-prev::after, .swiper-button-next::after{font-size: 35px; font-weight: 600; }
+.swiper-pagination-bullet{background-color: #6E93f7; opacity: 1; }
+.swiper-pagination-bullet-active{background-color: #4070F4; }
+
+@media screen and (max-width: 768px){
+    .swiper-button-prev{display: none; }
+}
