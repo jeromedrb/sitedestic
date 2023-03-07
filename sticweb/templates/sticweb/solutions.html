@@ -1,0 +1,174 @@
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="{% static 'sticweb/solution.css' %}">
+</head>
+
+<body>
+<header >
+		<header >
+			<a href="#" class="logo">
+
+				<span>S</span>hib'ah Tic Conception</a>
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="navbar">
+				<li><a href="{% url 'index' %}" onclick="toggleMenu();">Accueil</a></li>
+
+				<a href="{% url 'contact' %}" class="btn-reserve"onclick="toggleMenu();">Contacts</a>
+			</ul>
+
+		</header>
+	</header>
+
+
+	<div class="introd" style="position: relative; font-size: large;">
+				<div class="contentIntro">
+					<h2 >
+						Développement d'application</h2>
+
+						<p style=" text-align: center;">
+							<span></span>
+							<br> Vous voulez une
+							<span style="color:#3895db">solution numerique</span>
+							pour gerer votre organisation ? <br> Nous développons des applications
+						taillé sur mesure pour vous. <br>
+
+						<span style="color:#b264f1">Nous offrons des solutions pour PC ,Web et mobile(<span style="color: #abcd38;">iOS et Android</span>)</span>
+						</p>
+					</div>
+		<div style=" text-align: center;">
+</div></div>
+
+
+
+
+<section style="background-color:#254250; border-top:5px solid #07adb9;;">
+
+
+	<div class="interm">
+		<div class="txtInterm">
+			<p style=" text-align: center; font-size: 35px;" class="titr1">
+				Des projets sur mesure</p>
+			<P style="color: white; text-align: center; font-size: 25px;">
+				Nous développons tous types d’applications <br>
+				voici quelques projets
+			</p>
+		</div>
+
+		<div class="separateur">
+
+		</div>
+	</div>
+ {% for Solutions in solutions %}
+<div class='SectionProjet'  style="background-color: {{ Solutions.coulorfonvalue }};">
+	<h2 class="titre-texte" style="color: #bd56c7;" ><span> {{ Solutions.name }} </span> <br> {{ Solutions.title }}</h2>
+
+{% if Solutions.image %}
+    <img src="{{ Solutions.image.url }}" alt="{{ Solutions.name }}" class="col40">
+{% endif %}
+	<div class="col60 float-right" style="padding-left: 16px;">
+		<div class="pavecligneverti">
+			<p > <br>
+			<span style="color: #fb911f;"> {{ Solutions.name }} </span>
+                {{ Solutions.Description }}
+				Exigez <b>  {{ Solutions.name }} </b> aujourd'hui <br>
+				<a href="{{ Solutions.get_absolute_url }}" style="color: chartreuse; text-align: justify;">Je veux {{ Solutions.name }}</a>
+		<br>
+
+</p>
+	</div>
+	</div>
+	</div>
+  {% endfor %}
+
+
+
+
+
+
+<div class="section5">
+	<h1 style="text-align: center; color: #58799a;">
+		Quels sont les services proposés?</h1>
+
+		<h3 class="txtSection1">	Vous voulez une
+			<span style="color:#3895db">solution numerique</span>
+			pour gerer votre organisation ? <br> Nous développons des applications
+		taillé sur mesure pour vous. <br>
+
+		<span style="color:#644a79">Nous offrons des solutions pour PC et mobile(<span style="color: #abcd38;">iOS et Android</span>)</span>
+		<br> <br> <span style="color: #01cc9d; font-family: 'Times New Roman', Times, serif;  font-size: 22px;">Voici comment nous allons travailler ensemble</span>
+	</h3>
+	<!--section detail projet -->
+	<div class="sectionET">
+
+		<h1 class="textSect"></h1>
+
+		<div class="pavecligneverti" style="color: rgb(17, 17, 16);">
+		<p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: justify;">
+			<span style="color: #01cc9d; ">1 Contact</span><br>
+			La prise de contact par email, par téléphone ou dans nos locaux est un premier lieu
+			d’échange sur votre projet. <br>
+			Nous discuterons autours de votre cahier des charges. Ou,
+			si vous n’en avez pas, nous vous aiderons <br> à formaliser votre besoin.</p>
+		</div> <br> <br> <br>
+		<!--Devis -->
+		<div class="pavecligneverti" style="color: rgb(17, 17, 16);">
+			<p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: justify;">
+				<span style="color: #bd56c7; ">2 Devis</span><br>
+
+				Nous réaliserons un devis détaillé qui reprend point
+				par point toutes les fonctionnalités <br> de votre projet. <br>
+
+				A ce stade nous aurons également écarté toutes les
+				« inconnues techniques »  afin d’assurer  <br> la faisabilité du projet.
+
+				nous nous engagerons sur une date de livraison et sur un prix.
+
+			</p>
+			</div>
+			<!--Dev --> <br> <br> <br>
+			<div class="pavecligneverti" style="color: rgb(17, 17, 16);">
+			<p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: justify;">
+				<span style="color: #abcd38;"> 3 Développement </span><br>
+				Une fois le devis signé et l’accompte payé,
+				nous pouvons commencer sur la phase de développement. <br>
+
+				Nous aurons des points d’avancements où nous vous
+				présenterons par vidéo ou en presentiel où en est l’application.
+			</p> </div>
+			<!--Livraison --> <br> <br> <br>
+
+			<div class="pavecligneverti" style="color: rgb(17, 17, 16);">
+			<p style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+				<span style="color: #11d40a;">4 Livraison</span> <br>
+				Nous vous livrons l’application une fois que le
+				développement est terminé et que l’application a été testée. <br>
+
+				A cette occasion nous vous presenterons le produit
+				complèt qui reprend chaque point du devis pour <br>
+				être sûr que tout est développé et que tout est fonctionnel.
+
+
+			</p> </div>
+			<!--Livraison --> <br> <br> <br>
+
+			<div class="pavecligneverti" style="color: rgb(17, 17, 16);">
+			<p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: justify;">
+				<span style="color: #0d0d0e; ">5 Support</span><br>
+				Nous intervenons de manière efficace sur les éventuels
+				problèmes que vous rencontrez avec l’application. <br>
+			</p> </div>
+</div>
+</div>
+
+<div class="section6">
+
+</div>
+
+</body>
+</html>

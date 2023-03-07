@@ -1,0 +1,127 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solution</title>
+     <link rel="stylesheet" href="{% static 'sticweb/unesolution.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+	<header>
+		<header>
+			<a href="#" class="logo"><span>S</span>hib'ah Tic Conception</a>
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="navbar">
+				<li><a href="{% url 'index' %}" onclick="toggleMenu();">Accueil</a></li>
+				<li><a href="{% url 'index' %}" onclick="toggleMenu();">A propos</a></li>
+				<li><a href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+				<li><a href="{% url 'index' %}" onclick="toggleMenu();">Cablage</a></li>
+				<li><a href="{% url 'index' %}" onclick="toggleMenu();">Maintenance</a></li>
+				<li><a href="#" onclick="toggleMenu();">Boutique</a></li>
+				<a href="{% url 'contact' %}" class="btn-reserve"onclick="toggleMenu();">Contacts</a>
+			</ul>
+		</header>
+	</header>
+
+<div class="popup-screen">
+      <div class="popup-box">
+        <i class="fas fa-times close-btn"></i>
+        <h2>{{ solutions.name }}</h2>
+        <p>Nous sommes vraiment heureux pour l'interet que vous portez a notre solution .
+		Veuillez laissez vos contacts.
+		</p>
+<form method="post" class="formulaire">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form.name.label_tag }}
+        {{ form.name }}
+    </div>
+
+
+    <div class="form-group">
+        {{ form.email.label_tag }}
+        {{ form.email }}
+    </div>
+
+    <div class="form-group">
+        {{ form.tel.label_tag }}
+        {{ form.tel }}
+    </div>
+	<div><br> </div>
+    <button type="submit" class="btn">Envoyer</button>
+</form>
+      </div>
+</div>
+<section class="hero">
+
+<div class="container">
+    <div class="main-width">
+<div class="hero-text">
+   <h3> {{ solutions.name }} </h3>
+    <h1>Disponible sur <span class="input"> </span> </h1>
+    <p class="titl"> {{ solutions.title }} </p>
+    <div class="social">
+        <a href="https://wa.me/+22664367284" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+        <a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+        <a href="https://www.linkedin.com/in/shibah-tic-conception-83949a263/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a>
+        <a href="tel=+22664367284"> <i class="fa-solid fa-phone-flip"></i> </a>
+
+    </div>
+<button id="btn" type="button" value="{{ Solutions.id }}"> J'en veux</button>
+  <div class="desc" >  <p class="descri"> <br> {{ solutions.Description }} <br>
+        <span>Exisez {{ solutions.name }} aujourd'hui </span> <br>
+    </p> </div>
+</div>
+ </div>
+</div>
+<div>
+</div>
+</section>
+<script type="text/javascript" src="js/script.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".input", {
+        strings: ["PC","Windows", "MAC", "Android", "Iphone", "Web"],
+        typeSpeed: 130,
+        backSpeed: 100,
+        loop:true
+    } )
+</script>
+<script type="text/javascript">
+      const popupBox = document.querySelector(".popup-box");
+const closeBtn = document.querySelector(".close-btn");
+const popupScreen = document.querySelector('.popup-screen');
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+  setTimeout(() => {
+    popupScreen.classList.add("active");
+  }, 2000);
+});
+
+closeBtn.addEventListener("click", () => {
+  popupScreen.classList.remove("active");
+  //document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+});
+
+//const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+
+        </script>
+<script type="text/javascript">
+	window.addEventListener('scroll', function(){
+		const header =document.querySelector('header');
+		header.classList.toggle("sticky", window.scrollY > 0 );
+	});
+
+	function toggleMenu(){
+		const tmenuToggle = document.querySelector('.menuToggle');
+		const navbar = document.querySelector('.navbar');
+		navbar.classList.toggle('active');
+		menuToggle.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
