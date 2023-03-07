@@ -1,0 +1,195 @@
+
+*{
+
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: Arial,sans-serif;
+    font-style: normal;
+    text-align: left;
+    color: #333;
+    background: #c8cbc9;
+}
+
+
+	.apropos{
+		/*background-image: url(transformation-digitale.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative; */
+		padding-bottom: 38px;
+		padding-top: 0;
+		overflow: auto;
+		background-color: #1C3350;
+
+
+	}
+	.col40{
+	width: 40%;
+
+}
+h2 span,p span {
+    color : #F56926;
+
+}
+.titre-texte{
+    color: #fff;
+    font-family: Din,Sans-serif;
+    font-size: 53px;
+    font-weight: 900;
+    line-height: 58px;
+}
+.titre-p{
+    color: #fff;
+    font-family: Din,Sans-serif;
+    font-size: 25px;
+    font-weight: 150;
+    line-height: 35px;
+
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.col60{
+	width: 60%;
+
+}
+.col60apro{
+	width: 60%;
+	display: inline-block;
+	margin-top: 0;
+	padding-top: 50px;
+	padding-left: 30px;
+
+}
+.col600{
+	width: 60%;
+	border-radius: 14px;
+	background: #f1f1f3;
+	box-shadow:  43px 43px 86px #808081,
+				 -43px -43px 86px #ffffff;
+
+}
+.float-right{
+	float: right;
+}
+
+.introd{
+	background : url("images/bandeautrans.png") no-repeat center/100% 100%,url("images/cross plateform.jpg") no-repeat center/cover;
+	height: 500px;
+	}
+
+	.introd .contentIntro{
+		align-self: center;
+		padding-top: 30px;
+	}
+	.introd h2{
+		text-align: center;
+		color: white;
+		font-size: 25px;
+	}
+	.introd p{
+		text-align: center;
+		color: white;
+		font-size: 20px;
+	}
+	.menu{
+		margin-top: -100px;
+		background-color: white;
+		background-image: url("images/MDL_PageBg.svg");
+		background-position: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+	}
+
+	.menu .contenu{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	.menu .contenu .box{
+		width: 350px;
+		margin: 20px;
+		border: 20px solid #fff;
+		box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+	}
+
+	.menu .contenu .box .imbox{
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+	.menu .contenu .box .imbox img{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+
+	@media (max-width: 991px){
+	.content>img {
+		width: 100%;
+
+		height : 500px;
+	}
+	iframe{
+		height: 900px;
+	}
+
+	div.bareverticall{
+		height: 0px;
+		width: 0px;
+		background-color: none;
+		margin-right: 0px;
+	}
+	.row .col50{
+		width: 100%;
+	}
+	.col60{
+		width: 100%;
+	}
+	.col40{
+		width: 100%;
+	}
+	.right,
+	.left{
+		position:absolute;
+		top:250px;
+		font-size:5rem;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+	.right{
+		right:20px;
+	}
+	.col60apro{
+		width: 100%;
+		padding-top: 10px;
+		padding-left: 4px;
+	}
+	.titre-texte{
+    color: #fff;
+    font-family: Din,Sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+
+}
+	}

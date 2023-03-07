@@ -1,0 +1,107 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+	.Tel{
+		background-color:#0c313f;
+		background-size: cover;
+	}
+
+.Tel .contenu{
+	display: flex;
+	margin-top: 4px;
+	/*width: 100%; */
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.Tel .contenu .box{
+	width: 340px;
+	margin: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 4px;
+}
+.Tel .contenu .box a{
+	color: rgb(245, 207, 125) ;
+	text-decoration: none;
+	text-align: center;
+}
+.Tel .contenu .box p{
+
+
+	text-align: center;
+	color: white;
+}
+
+.copyright{
+	background-color: #08242f;
+    padding: 1px 2px;
+    border-top: 2px solid rgba(0,0,0, 0.1);
+    text-align: center;
+	padding-bottom: 10px;
+}
+.copyright p{
+    color: white;
+
+}
+
+
+.copyright a {
+    color: #fb911f;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.basul {
+	display: flex;
+	justify-content: center;
+}
+
+.basli{
+	margin: 20px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	border-radius: 150px;
+background: #0c313f;
+box-shadow:  6px 6px 12px #051419,
+             -6px -6px 12px #134e65;
+}
+
+.basli:hover{
+	box-shadow: inset 6px 6px 12px #051419,
+	inset -6px -6px 12px #134e65;
+}
+@media (max-width: 991px) {
+
+
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px)
+	{
+		.basli{
+			margin: 10px;
+		}
+
+
+	}

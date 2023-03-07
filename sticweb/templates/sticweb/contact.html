@@ -1,0 +1,132 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/contact.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
+</head>
+
+<body>
+	<header>
+		<header>
+			<a href="#" class="logo"><span>S</span>hib'ah Tic Conception</a>
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="navbar">
+				<li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+				<li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+				<li><a href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+				<li><a href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
+				<li><a href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
+				<li><a href="boutique.html" onclick="toggleMenu();">Boutique</a></li>
+				<a href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a>
+			</ul>
+		</header>
+	</header>
+
+
+<section class="contact" id="contact">
+	<div class="titre noir">
+		<h2 class="titre-text" style="text-align: center;"><span>C</span>ontact</h2>
+		<p style="color: white; text-align: center;">Veuillez nous laisser un message et notre equipe prendra attache avec vous dans les 12h qui suivent</p>
+	</div>
+	<div class="formulaire">
+	<form method="post">
+    {% csrf_token %}
+	<div class="contactform">
+		<h3>Envoyer un message</h3>
+		<div class="inputboite" >
+			{{ form.name.label_tag }}
+			{{ form.name }}
+
+		</div>
+		<div class="inputboite">
+		   {{ form.telephone.label_tag }}
+			{{ form.telephone }}
+		</div>
+		<div class="inputboite">
+		   {{ form.email.label_tag }}
+			{{ form.email }}
+		</div>
+		<div class="inputboite">
+		   {{ form.message.label_tag }}
+			{{ form.message }}
+		</div>
+		<div class="inputboite">
+
+			<input type="submit" value="envoyer">
+		</div>
+	</div>
+		</form>
+		</div>
+</section>
+<section class="Tel" id="Tel">
+
+	<div class="contenu">
+	<div class="box">
+		<div>
+			<p >Adresse</p> <br>
+		<a href="" >Burkina faso</a> <br>
+		<a href="">Bobo-Dioulasso</a>
+		</div>
+
+	</div>
+	<div class="box">
+		<div>
+			<p >Téléphone : <br> <br></p>
+			<a href="tel=+22664367284" >+2266565656<a/>
+
+		</div>
+
+	</div>
+	<div class="box">
+		<div>
+			<p >Email : <br> <br> </p>
+			<a href="mailto=shibaticconception.com?subject=Depuis%20ici" >shibaticconception@gmail.com<a/>
+
+		</div>
+	</div>
+	<div class="box">
+		<div class="box1">
+			<p >Suivez nous sur  <br> <br> </p>
+			<ul class="basul">
+				<li class="basli">
+					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL">
+						<img src="{% static 'sticweb/images/facebook.png' %}" alt="">
+					</a>
+				</li>
+				<li class="basli">
+					<a href="https://wa.me/+22664367284">
+						<img src="{% static 'sticweb/images/whatsapp.png' %}" alt="">
+					</a>
+
+				</li>
+
+				<li class="basli">
+					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL">
+						<img src="{% static 'sticweb/images/instagram.png' %}" alt="">
+					</a>
+
+
+
+				</li>
+				<li class="basli">
+					<a href="https://www.linkedin.com/in/shibah-tic-conception-83949a263/">
+						<img src="{% static 'sticweb/images/linkedin.png' %}" alt="">
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	</div>
+	</section>
+
+<div class="copyright">
+<p>
+	©shiba'ah Tic Conception. Tous droits réservés - Politique de confidentialité
+	- Mentions Légales <br> - Cookies - Mention d’information applications
+</p>
+</div>
+</body>
+</html>
