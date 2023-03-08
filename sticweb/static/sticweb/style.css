@@ -427,10 +427,10 @@ background : url("images/jaunebs.png") no-repeat center/100% 100%;
 	padding-right: 40px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	/*background-color:#673de5;*/
-	background-color: #1C3350;
+	/*background-color:#673de5;
+	background-color: #1C3350;*/
 	overflow: auto;
-
+background-color: #5e91c0;
 
 	}
 	h2 span,p span {
@@ -686,7 +686,7 @@ flex-grow: 1;
 		align-items: center;
 		flex-direction: column;
 		border-radius: 15px;
-		padding: 40px;
+		padding: 4px;
 	}
 	.temoignage .contenu .box .imbox{
 		width: 80px;
@@ -722,7 +722,10 @@ flex-grow: 1;
     font-weight: 600;
 }
 
-
+.temoignage .contenu .box .text p{
+text-align: justify;
+padding: 4px;
+}
 	.contact{
 		background-image: url('images/fonddfff.png');
 		background-repeat: no-repeat;
@@ -1232,6 +1235,12 @@ text-shadow: #a14b4b;
 	header.sticky{
 		padding: 10px 20px;
 	}
+	.titre-texte {
+
+    font-size: 25px;
+    font-weight: 900;
+
+}
 	.col60apro{
 		width: 100%;
 	}
@@ -1501,7 +1510,7 @@ background-color: transparent;
 		font-family:Arial, Helvetica, sans-serif;
 	}
 	.SectionProjet{
-
+        background: #1C3350;
 		padding-left: 5px;
 		padding-right: 5px;
 		padding-top: 3px;
