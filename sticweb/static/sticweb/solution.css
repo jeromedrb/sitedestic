@@ -448,7 +448,9 @@ div.paveclignevertiE p{
 	header.sticky{
 		padding: 10px 20px;
 	}
-
+section {
+    padding: 0px;
+}
 
 	header .navbar li{
 		margin-left: 0px;
@@ -466,9 +468,7 @@ div.paveclignevertiE p{
 	.navbar{
 		display: none;
 	}
-	section{
-		padding: 20px;
-	}
+
 
 	header .navbar.active{
 		width: 100%;
@@ -594,5 +594,8 @@ div.paveclignevertiE p{
 	.titr1{
 color: #01b288;
 	}
+	section {
+    padding: 0px;
+}
 	}
 
