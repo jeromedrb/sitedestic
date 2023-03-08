@@ -1402,7 +1402,7 @@ text-shadow: #a14b4b;
     padding: 0px;
 }
 		.titre-text{
-			font-size: 28px;
+			font-size: 25px;
     font-weight: 700;
     line-height: 1px;
 		}
@@ -1561,6 +1561,5 @@ background-color: transparent;
 	.formulair{
 	width:100%;
 	}
-.sdt{
-}
+
 	}
