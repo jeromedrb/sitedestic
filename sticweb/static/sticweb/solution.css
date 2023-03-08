@@ -454,13 +454,14 @@ section {
 
 	header .navbar li{
 		margin-left: 0px;
+		margin-bottom: 25;
 	}
 	iframe{
 		height: 445px;
 	}
 	header .navbar li a {
 		text-decoration: none;
-		color: #000;
+		color: White;
 		font-size: 1.6em;
 		font-weight: 300;
 	}
@@ -479,7 +480,7 @@ section {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		background: #ffff;
+		background: #fff;
 		align-items: center;
 	}
 

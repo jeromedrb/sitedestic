@@ -77,11 +77,11 @@
 
 
 	header.sticky .logo{
-		color: #000;
+		color: #D86584;
 	}
 
 	header.sticky .navbar li a {
-		color: #000;
+		color: #D86584;
 	}
 
 	header.sticky li a:hover{
@@ -1256,7 +1256,7 @@ text-shadow: #a14b4b;
 
 	header .navbar li a {
 		text-decoration: none;
-		color: #000;
+		color: White;
 		font-size: 1.6em;
 		font-weight: 300;
 	}
