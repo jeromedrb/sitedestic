@@ -1380,6 +1380,13 @@ text-shadow: #a14b4b;
 
 	@media (max-width: 480px)
 	{
+	body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #1c1b1b;
+}
 		header{
 		position: fixed;
 		top: 0%;
@@ -1421,11 +1428,12 @@ text-shadow: #a14b4b;
     line-height: 30px;
 }
 .titre-p{
-    font-size: 17px;
-    font-weight: 70;
-    line-height: 25px;
-     padding-left: 0px;
-    padding-right: 0px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
 }
 .btnContactNs{
 
