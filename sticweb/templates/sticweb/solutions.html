@@ -55,7 +55,7 @@
 		<div class="txtInterm">
 			<p style=" text-align: center; font-size: 35px;" class="titr1">
 				Des projets sur mesure</p>
-			<P class="titre-p" style="color: white; text-align: center; ">
+			<P style="color: white; text-align: center; font-size: 25px;">
 				Nous développons tous types d’applications <br>
 				voici quelques projets
 			</p>
@@ -72,11 +72,11 @@
 {% if Solutions.image %}
     <img src="{{ Solutions.image.url }}" alt="{{ Solutions.name }}" class="col40">
 {% endif %}
-	<div class="col60 float-right" style="padding-left: 1px;">
+	<div class="col60 float-right" style="">
 		<div class="pavecligneverti">
-			<p > <br>
+		   <p class="titre-p"> <br>
 			<span style="color: #fb911f;"> {{ Solutions.name }} </span>
-           <span class="titre-p" >      {{ Solutions.Description }} </span>
+             {{ Solutions.Description }}</p >
 				Exigez <b>  {{ Solutions.name }} </b> aujourd'hui <br>
 				<a href="{{ Solutions.get_absolute_url }}" style="color: chartreuse; text-align: justify;">Je veux {{ Solutions.name }}</a>
 		<br>
