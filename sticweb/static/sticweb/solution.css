@@ -448,6 +448,11 @@ div.paveclignevertiE p{
 	header.sticky{
 		padding: 10px 20px;
 	}
+	html {
+
+    -webkit-text-size-adjust: 100%;
+
+}
 	body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
