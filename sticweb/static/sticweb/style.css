@@ -454,7 +454,7 @@ box-shadow:  12px 12px 28px #061a21,
 	padding-top: 30px;
 	padding-bottom: 30px;
 	/*background-color:#673de5;*/
-background : url("images/bas2jaune.png") no-repeat center/100% 100%;
+
 	background-color:  #1C3350;
 	overflow: auto;
 	}
@@ -1540,6 +1540,7 @@ background-color: transparent;
 		padding-right: 6px;
 		padding-top: 4px;
 		padding-bottom: 4px;
+
 		}
 
 		.menu .contenu .box {

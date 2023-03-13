@@ -12,7 +12,11 @@
  }
 	body {
 	margin: 0;
-	font-family : 'Times New Roman', Times, serif;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #1c1b1b;
 
 	}
 	header{
@@ -178,6 +182,7 @@ height:100px;
 	color: #fb911f;
 	font-size: 1.5em;
 	font-weight: 700px;
+
 }
 
 .row .col50 img{
@@ -222,14 +227,20 @@ height:100px;
 .interm .txtInterm{
 	padding-bottom: 30px;
 }
+
 .SectionProjet{
-	padding-left: 40px;
+/*	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	/*background-color:#673de5;*/
+	background-color:#673de5;*/
 	background-color: #254250;
 	overflow: auto;
+
+	    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .SectionProjet h2{
@@ -268,13 +279,16 @@ height:100px;
 } */
 .titre-p{
     color: #fff;
-    font-family:Times New Roman;
-    font-size: 18px;
-    font-weight: 80;
-    line-height: 27px;
-    padding-left: 10px;
-    padding-right: 30px;
-    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 10px;
+
+    display: inline;
+    float: left;
+    width: 100%;
 }
 
 div.bareverticall{
@@ -452,12 +466,7 @@ div.paveclignevertiE p{
 		padding: 10px 20px;
 	}
 
-	body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-}
+
 section {
     padding: 0px;
 }
@@ -579,7 +588,7 @@ section {
 			text-decoration: none;
 			margin-left: 0px;
 		}
-		.SectionProjet{
+		.SectionProjet.gate{
 			padding-left: 4px;
 			padding-right: 4px;
 			padding-top: 3px;
@@ -615,7 +624,6 @@ color: #01b288;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: white;
 
 }
 	}
