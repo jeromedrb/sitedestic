@@ -206,7 +206,107 @@ border-radius: 5px;
     font-size: 2em;
 }
 
+  @media (max-width: 991px) {
+	header,
+	header.sticky{
+		padding: 10px 20px;
+	}
 
+
+}
+.titre-texte {
+
+    font-size: 25px;
+    font-weight: 900;
+
+}
+	.col60apro{
+		width: 100%;
+	}
+	div.bareverticall{
+		height: 0px;
+		width: 0px;
+		background-color: none;
+		margin-right: 0px;
+	}
+	iframe{
+		width: 100%;
+		height: 445px;
+		border: none;
+	}
+	.col60{
+		width: 100%;
+	}
+
+	header .navbar li{
+		margin-left: 0px;
+	}
+
+	header .navbar li a {
+		text-decoration: none;
+		color: White;
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+
+	.navbar{
+		display: none;
+	}
+	section{
+		padding:0px;
+	}
+
+	header .navbar.active{
+		width: 100%;
+		height: calc(100% -68px);
+		position: fixed;
+		top: 68px;
+		left:0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		background:#1C3350;
+		align-items: center;
+	}
+
+	.menuToggle{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background-image: url(./images/menu.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		background-size: 30px;
+		border-color:white;
+		color:white;
+
+	}
+
+	.menuToggle.active
+	{
+		background-image: url(./images/close.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-origin: center;
+
+
+
+	}
+	.logo{
+			color: #fff;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-decoration: none;
+			margin-left: 0px;
+		}
+
+	header.sticky .menuToggle{
+		filter: invert(1);
+
+	}
+
+	}
 	@media (max-width: 480px)
 	{
 .contactform .inputboite{
