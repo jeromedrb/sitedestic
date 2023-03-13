@@ -66,7 +66,7 @@
 	   text-transform:uppercase ;
 	}
 	header .navbar li a:hover{
-		color: #fb911f;
+		color: White;
 		border-bottom: 2px solid #fb911f;
 	}
 	header.sticky{
@@ -81,7 +81,7 @@
 	}
 
 	header.sticky .navbar li a {
-		color: #D86584;
+		color: White;
 	}
 
 	header.sticky li a:hover{
@@ -1153,7 +1153,7 @@ text-shadow: #a14b4b;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	/*background-color:#673de5;*/
-	background : url("images/hauittran.png") no-repeat center/100% 100%;
+	background : url("images/hauittran1.png") no-repeat center/100% 100%;
 	background-color: #f5faff;
 	overflow: auto;
 
@@ -1299,6 +1299,9 @@ text-shadow: #a14b4b;
 		background-position: center;
 		cursor: pointer;
 		background-size: 30px;
+		border-color:white;
+		color:white;
+
 	}
 
 	.menuToggle.active
@@ -1309,11 +1312,13 @@ text-shadow: #a14b4b;
 		background-origin: center;
 
 
+
 	}
 
 	}
 	header.sticky .menuToggle{
 		filter: invert(1);
+
 	}
 
 
