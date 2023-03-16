@@ -61,10 +61,15 @@ a.active,.anav:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+@media (max-width: 958px){
   .checkbtn{
     display: block;
+    position:center;
   }
+  .fa, .far, .fas {
+
+    padding-top: 20;
+}
   ul{
     position: fixed;
     width: 100%;
