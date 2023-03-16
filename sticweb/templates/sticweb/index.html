@@ -8,10 +8,12 @@
 	<title>Shib'ah Tic Conception</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 	<!-- Swiper CSS -->
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/headstyle.css' %}">
 	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,21 +25,23 @@
 
 </head>
 <body>
-	<header>
-		<header>
-			<a href="#" class="logo"><span>S</span>hib'ah Tic Conception</a>
-			<div class="menuToggle" onclick="toggleMenu();"></div>
-			<ul class="navbar">
-				<li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
-				<li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
-				<li><a href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
-				<li><a href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
-				<li><a href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
-				<li><a href="#" onclick="toggleMenu();">Boutique</a></li>
-				<a href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a>
-			</ul>
-		</header>
-	</header>
+	<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><span>S</span>hib'ah Tic Conception</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a class="anav"  href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+				<li><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
+				<li><a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+				<li><a class="anav"  href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
+				<li><a class="anav"  href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
+				<li><a class="anav"  href="#" onclick="toggleMenu();">Boutique</a></li>
+				<li><a class="anav"  href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a></li>
+      </ul>
+    </nav>
 
 	<div class="slider">
 		<!-- fade css -->
