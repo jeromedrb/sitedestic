@@ -13,6 +13,7 @@
 	<!-- Swiper CSS -->
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/styleindexservices.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/headstyle.css' %}">
 	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
@@ -32,7 +33,7 @@
       </label>
       <label class="logo"><span>S</span>hib'ah Tic Conception</label>
       <ul>
-        <li><a class="active" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a class="active anav" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
 
 				<li><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
 				<li><a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
@@ -155,87 +156,122 @@
 </div>
 
 
+  <div class="container0">
+    <div class="heading0">
+      <h1>Nos services</h1>
+    </div>
+    <div class="row0">
+      <div class="card0">
+        <div class="flex-element " style="width: 100%; height: 100%;">
+            <div class="head0 bg-mutu">
+            <h2 class="title">Developpement</h2>
+            <p class="sub_title">Nous convevons des pplications sur mesures pour vous pour gerer votre organisation</p>
+
+            </div>
+            <div class="triangle">
+            <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
+            </div>
+            <div class="content0">
+            <ul>
+            <li>Des logiciel de gestions</li>
+            <li>Des applications mobiles</li>
+            <li>Des plateform web</li>
+            <li>Système embarqué</li>
+            </ul>
+            <a class="btn btn-orange" href="{% url 'solution' %}">En savoir plus</a>
+            </div>
+            </div>
+      </div>
+      <div class="card0">
+        <div class="flex-element " style="width: 100%; height: 100%;">
+            <div class="head0 bg-mutu">
+            <h2 class="title">Conception de visuel</h2>
+            <p class="sub_title">exisez des visuels de qualité au gout du jour</p>
+
+            </div>
+            <div class="triangle">
+            <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
+            </div>
+            <div class="content0">
+            <ul>
+            <li>Affiche publicitaire</li>
+            <li>Banderole, bache, kakemono</li>
+            <li>Carte de mariage, visite,logo</li>
+            <li>Montage videos et photos</li>
+            </ul>
+            <a class="btn btn-orange" href="#">En savoir plus</a>
+            </div>
+            </div>
+      </div>
+      <div class="card0">
+        <div class="flex-element " style="width: 100%; height: 100%;">
+            <div class="head0 bg-mutu">
+            <h2 class="title">Réseaux</h2>
+            <p class="sub_title">Nos professionel certifié pour vos travaux de reseaux</p>
+
+            </div>
+            <div class="triangle">
+            <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
+            </div>
+            <div class="content0">
+            <ul>
+            <li>Cablages reseaux</li>
+            <li>Configurations reseaux</li>
+            <li>Maintenace d'infrastructure réseaux</li>
+            <li>Formation en réseaux</li>
+            </ul>
+            <a class="btn btn-orange" href="#">En savoir plus</a>
+            </div>
+            </div>
+      </div>
+      <div class="card0">
+        <div class="flex-element " style="width: 100%; height: 100%;">
+            <div class="head0 bg-mutu">
+            <h2 class="title">Maintenance</h2>
+            <p class="sub_title">Confiez nous la maintenance de votre équippement informatique</p>
+
+            </div>
+            <div class="triangle">
+            <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
+            </div>
+            <div class="content0">
+            <ul>
+            <li>Des ordinateurs</li>
+            <li>Des telephones mobiles</li>
+            <li>Des appareils electro-menager</li>
+            <li></li>
+            </ul>
+            <a class="btn btn-orange" href="#">En savoir plus</a>
+            </div>
+            </div>
+      </div>
+        <div class="card0">
+        <div class="flex-element " style="width: 100%; height: 100%;">
+            <div class="head0 bg-mutu">
+            <h2 class="title">Domotique</h2>
+            <p class="sub_title">Confiez nous la maintenance de votre équippement informatique</p>
+
+            </div>
+            <div class="triangle">
+            <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
+            </div>
+            <div class="content0">
+            <ul>
+            <li>Installation de maison intelligente</li>
+            <li>Des camera de surveillance</li>
+            <li>Des système d'alarme et de detecteurs</li>
+            <li></li>
+            </ul>
+            <a class="btn btn-orange" href="#">En savoir plus</a>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
-
-	<section class="menu" id="menu" >
-
-		<h2 class="titre-texte" style="color: rgb(14, 13, 13); padding-left: 10px; text-align: center;" >
-			<span>Nos services</span></h2>
-		<div class="contenu">
-
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/cros platfm.png' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Développement d'application cross plateform</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/cablage_reseau.jpg' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Réseau</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/cameras-dome-ptz-ip-professionnel-magasin-comerces-.jpg' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Visiosurveillance</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/domotique.png' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Domotique</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/tel ip.jpg' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Télephonie IP</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/pc repa.png' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Maintenance Informatique</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/formattt.jfif' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Formation</h3>
-				</div>
-			</div>
-			<div class="box">
-				<div class="imbox">
-					<img src="{% static 'sticweb/images/electroniq.jpg' %}" alt="">
-				</div>
-				<div class="text">
-					<h3>Electronique embarqué</h3>
-				</div>
-			</div>
-		</div>
-	 </div>
-	 <div class="titre">
-		<a href="{% url 'services' %}" class="btn1">Voir Plus </a>
-	 </div>
-	</section>
 		<div class="separateur">
 
 		</div>

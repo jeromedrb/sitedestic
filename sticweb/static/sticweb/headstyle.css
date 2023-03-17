@@ -17,8 +17,9 @@ label.logo{
   color: white;
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 0 10px;
   font-weight: bold;
+
 }
 nav ul{
   float: right;
@@ -61,7 +62,9 @@ a.active,.anav:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 958px){
+
+
+@media (max-width: 1316px){
   .checkbtn{
     display: block;
     position:center;

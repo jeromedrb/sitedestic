@@ -8,7 +8,8 @@ from .models import Solutions, demandesolution, Message
 
 # Create your views here.
 
-
+def test(request):
+    return render (request,'sticweb/test.html')
 def index(request):
     solutions = Solutions.objects.all()
     if request.method == 'POST':
