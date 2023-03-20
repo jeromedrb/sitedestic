@@ -2,7 +2,7 @@
 section{
     display: block;
 }
-@media (max-width: 1200px){
+@media (min-width: 1200px){
     .contenttxt {
     padding-left: 12.6875rem;
 
