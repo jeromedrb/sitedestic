@@ -3,11 +3,14 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Shib'ah Tic Conception</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/test.css' %}">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 	<!-- Swiper CSS -->
@@ -26,21 +29,21 @@
 
 </head>
 <body>
-	<nav>
+	<nav class="headnav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo"><span>S</span>hib'ah Tic Conception</label>
-      <ul>
-        <li><a class="active anav" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+      <ul class="headul">
+        <li class="headli"><a class="active anav" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
 
-				<li><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
-				<li><a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
-				<li><a class="anav"  href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
-				<li><a class="anav"  href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
-				<li><a class="anav"  href="#" onclick="toggleMenu();">Boutique</a></li>
-				<li><a class="anav"  href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a></li>
+				<li class="headli"><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
+				<li class="headli"> <a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+				<li class="headli"><a class="anav"  href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
+				<li class="headli"><a class="anav"  href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
+				<li class="headli"><a class="anav"  href="#" onclick="toggleMenu();">Boutique</a></li>
+				<li class="headli"><a class="anav"  href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a></li>
       </ul>
     </nav>
 
@@ -88,18 +91,7 @@
 
 		<div class="myslide fade">
 			<div class="txt">
-				<h2 class="titre-texte" style=" padding-left: 10px; text-align: justify;"> Maintenance du <br>
-		<span>	Système informatique </span>
-		</h2>
-			<h3 class="titre-h3" style=" padding-left: 10px; text-align: justify; color: #c8cbc9;" >
-				<span>Panne materiel ou logiciel</span></h3>
-				<p class="titre-p" style=" text-align: justify; padding-left: 10px;">
-                Si vous cherchez une équipe <br>
-					de maintenance informatique <br>
-                    fiable et compétente, <br>
-                    n'hésitez pas à nous contacter <br>
-                    pour discuter de vos besoins.
-                </p>
+					<img src="{% static 'sticweb/images/maintenace.png' %}" alt="" class="imgs2">
 
 			</div>
 			<img src="{% static 'sticweb/images/bacgrMainten.jpg' %}" style="width: 100%; height: 100%;" class="imgsli">
@@ -121,62 +113,70 @@
 	</div>
 
 	<script src="{% static 'sticweb/jsfile.js' %}"></script>
-	<div class='apropos' id="apropos"  style="padding-bottom: 30px;">
-		<h2 class="titre-texte" style="color: rgb(15, 10, 10); padding-left: 10px; text-align: center;" ><span>A propos</span></h2>
 
-		<img src="{% static 'sticweb/images/le digital.png' %}" class="col40" style="padding-left: 16px; border-radius: 15px;">
-		<div class="col60apro float-right " >
+ <section class="apo">
+      <div class="contenuapo">
+         <div class="imdapo">
+             <img  src="{% static 'sticweb/images/apropo.jpg' %}"  alt="" />
+          </div>
+          <div class="txtapo">
+              <h3 class="hh3">Votre partenaire informatique</h3>
+              <p class="contenta ap"> L'histoire du monde est marquée par plusieurs ères, dont l'ère industrielle qui est la plus récente et proche de
+                                notre époque. Ceux qui n'ont pas réussi à s'adapter à cette époque ont été oubliés par l'histoire.
+                                Nous sommes maintenant à l'ère de l'information et pour ceux qui veulent rester compétitifs dans cette
+                                course effrénée, l'adaptation est essentielle. C'est là qu'intervient Shib'ah Tic Conception,
+                                notre entreprise informatique, qui vous accompagne dans cette  <strong>transition numérique</strong> .
+                </p>
 
-				<div class="blockanim glow">
-					<p class="titre-p" style="text-align: justify; padding-right: 30px; color: white; padding-left: 10px; padding-right: 10px; "  > <br>
-						L'histoire du monde est marquée par plusieurs ères, dont l'ère industrielle qui est la plus récente et proche de
-						notre époque. Ceux qui n'ont pas réussi à s'adapter à cette époque ont été oubliés par l'histoire.
-						Nous sommes maintenant à l'ère de l'information et pour ceux qui veulent rester compétitifs dans cette
-						course effrénée, l'adaptation est essentielle. C'est là qu'intervient Shib'ah Tic Conception,
-						notre entreprise informatique, qui vous accompagne dans cette transition numérique.
-						Nos services englobent tous les aspects de l'informatique et du numérique, du développement de logiciels
-						personnalisés à la configuration et au câblage de réseaux, en passant par la conception graphique.
-						Shib'ah Tic Conception est un acteur incontournable pour votre développement et votre réussite.
-						Rejoignez-nous dès aujourd'hui et devenez notre partenaire privilégié.
-						<br> <span style="color: blueviolet; "> Vous aussi devenez partenaire de Shib'ah Tic Conception aujourd'hui. </span>
-					</p>
-
-				</div>
-		</div>
-		</div>
-	<div class="apro" >
+          </div>
+      </div>
 
 
-</div>
+          </section>
 
 
+          <section class="presente">
+              <div class="contenupresent">
+                  <div class="imdpresent">
+                  <!--      <img    src="logo.jpg"  alt=""  class="imgt"/> -->
+                  </div>
+                  <div class="contenttxt">
+                      <p class="txt-yellow pt" style="text-align: justify;">Vous aussi devenez partenaire de <span class="hide979">Shib'ah Tic Conception </span>aujourd'hui.</p>
+                      <p class="accroche pt "  style="text-align: justify;">Nos services englobent tous les aspects de l'informatique et du numérique, du développement de logiciels personnalisés
+                          à la configuration et au câblage de réseaux, en passant par la conception graphique. <br>
+                     <b> Shib'ah Tic Conception </b> est un acteur incontournable
+                          pour votre développement et votre réussite. Rejoignez-nous dès aujourd'hui et devenez notre partenaire privilégié.</p>
+                      <p class="accroche pt"  style="text-align: justify;"><a class="colorbox950x710" href="#contact">En savoir plus</a></p>
+                      </div>
+              </div>
 
-<div>
 
-</div>
+                  </section>
+
 
 
   <div class="container0">
     <div class="heading0">
-      <h1>Nos services</h1>
+      <h1 class="noservice">Nos services</h1>
+      <h8>Quelques services et solutions</h8>
     </div>
     <div class="row0">
       <div class="card0">
         <div class="flex-element " style="width: 100%; height: 100%;">
-            <div class="head0 bg-mutu">
+            <div class="head0 bg-mutu hdev">
             <h2 class="title">Developpement</h2>
-            <p class="sub_title">Nous convevons des pplications sur mesures pour vous pour gerer votre organisation</p>
+            <p class="sub_title">Nous convevons des applications sur mesures pour gerer votre organisation</p>
 
             </div>
             <div class="triangle">
             <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
             </div>
             <div class="content0">
-            <ul>
-            <li>Des logiciel de gestions</li>
-            <li>Des applications mobiles</li>
-            <li>Des plateform web</li>
-            <li>Système embarqué</li>
+            <ul class="ulcard">
+            <li class="licard" >Des logiciels de gestions</li>
+            <li class="licard">Des applications mobiles</li>
+            <li class="licard">Des plateformes web</li>
+            <li class="licard">Système embarqué</li>
             </ul>
             <a class="btn btn-orange" href="{% url 'solution' %}">En savoir plus</a>
             </div>
@@ -184,7 +184,7 @@
       </div>
       <div class="card0">
         <div class="flex-element " style="width: 100%; height: 100%;">
-            <div class="head0 bg-mutu">
+            <div class="head0 bg-mutu hconc">
             <h2 class="title">Conception de visuel</h2>
             <p class="sub_title">exisez des visuels de qualité au gout du jour</p>
 
@@ -193,11 +193,11 @@
             <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
             </div>
             <div class="content0">
-            <ul>
-            <li>Affiche publicitaire</li>
-            <li>Banderole, bache, kakemono</li>
-            <li>Carte de mariage, visite,logo</li>
-            <li>Montage videos et photos</li>
+            <ul class="ulcard">
+            <li class="licard">Affiche publicitaire</li>
+            <li class="licard">Bandérole, bache, kakemono</li>
+            <li class="licard">Carte de mariage,visite,logo</li>
+            <li class="licard">Montage videos et photos</li>
             </ul>
             <a class="btn btn-orange" href="#">En savoir plus</a>
             </div>
@@ -205,20 +205,20 @@
       </div>
       <div class="card0">
         <div class="flex-element " style="width: 100%; height: 100%;">
-            <div class="head0 bg-mutu">
+            <div class="head0 bg-mutu hrso">
             <h2 class="title">Réseaux</h2>
-            <p class="sub_title">Nos professionel certifié pour vos travaux de reseaux</p>
+            <p class="sub_title">Nos professionels certifié pour vos travaux de reseaux</p>
 
             </div>
             <div class="triangle">
             <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
             </div>
             <div class="content0">
-            <ul>
-            <li>Cablages reseaux</li>
-            <li>Configurations reseaux</li>
-            <li>Maintenace d'infrastructure réseaux</li>
-            <li>Formation en réseaux</li>
+            <ul class="ulcard">
+            <li class="licard">Cablages reseaux</li>
+            <li class="licard">Configurations reseaux</li>
+            <li class="licard">Maintenace d'infrastructure réseaux</li>
+            <li class="licard" >Formation en réseaux</li>
             </ul>
             <a class="btn btn-orange" href="#">En savoir plus</a>
             </div>
@@ -226,7 +226,7 @@
       </div>
       <div class="card0">
         <div class="flex-element " style="width: 100%; height: 100%;">
-            <div class="head0 bg-mutu">
+            <div class="head0 bg-mutu hmain">
             <h2 class="title">Maintenance</h2>
             <p class="sub_title">Confiez nous la maintenance de votre équippement informatique</p>
 
@@ -235,10 +235,10 @@
             <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
             </div>
             <div class="content0">
-            <ul>
-            <li>Des ordinateurs</li>
-            <li>Des telephones mobiles</li>
-            <li>Des appareils electro-menager</li>
+            <ul class="ulcard">
+            <li class="licard">Des ordinateurs</li>
+            <li class="licard">Des téléphones mobiles</li>
+            <li class="licard">Des appareils electro-menager</li>
             <li></li>
             </ul>
             <a class="btn btn-orange" href="#">En savoir plus</a>
@@ -247,20 +247,21 @@
       </div>
         <div class="card0">
         <div class="flex-element " style="width: 100%; height: 100%;">
-            <div class="head0 bg-mutu">
+            <div class="head0 bg-mutu hdomo">
             <h2 class="title">Domotique</h2>
-            <p class="sub_title">Confiez nous la maintenance de votre équippement informatique</p>
+            <p class="sub_title">Savourez du confort avec le digital</p>
 
             </div>
             <div class="triangle">
             <img width="377" height="20" src="{% static 'sticweb/images/triangle_bleu_clair_gris.svg' %}" loading="lazy" alt="" style="display: block;" class="img0">
             </div>
             <div class="content0">
-            <ul>
-            <li>Installation de maison intelligente</li>
-            <li>Des camera de surveillance</li>
-            <li>Des système d'alarme et de detecteurs</li>
-            <li></li>
+
+            <ul class="ulcard">
+            <li class="licard">Installation de maison intelligente</li>
+            <li class="licard">Des cameras de surveillance</li>
+            <li class="licard">Des systèmes d'alarme </li>
+            <li class="licard">Des detecteurs, ...</li>
             </ul>
             <a class="btn btn-orange" href="#">En savoir plus</a>
             </div>
@@ -268,7 +269,6 @@
       </div>
     </div>
   </div>
-
 
 
 

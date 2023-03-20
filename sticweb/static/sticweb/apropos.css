@@ -1,0 +1,130 @@
+
+:root {
+    --text-shadow-white: 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff;
+}
+bg_whitea{
+background-color: #f4f5ff;
+    overflow: auto;
+}
+
+.ap{
+font-family: poppins,sans-serif!important;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-stretch: normal;
+    color: #4d5163;
+    line-height: 22px;
+    font-size: 100%;
+    text-align:justify;
+
+}
+.bloc-left {
+     padding-left: 3.6875rem;
+     float: right;
+}
+.wrappera{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+section.left-right div.img {
+    display: inline-block;
+    width: 548px;
+    height: auto;
+    vertical-align: middle;
+}
+section.left-right div.img img {
+    width: 100%;
+}
+.imga {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 1400px)
+.wrappera {
+    width: 1170px!important;
+}
+@media (min-width: 1200px)
+.wrappera {
+    width: 1170px;
+}
+section.left-right div.text {
+    display: inline-block;
+    width: calc(100% - 553px);
+    vertical-align: middle;
+     padding-left: 3.6875rem;
+}
+section.left-right div.text h2, section.left-right div.text h3 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    font-weight: 700;
+    color: #001136;
+    padding-bottom: 0.3125rem;
+    margin:0;
+}
+
+section.left-right div.text p.contenta, section.left-right div.text h3.contenta {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #4d5163;
+    margin-top: 0.5625rem;
+    padding-bottom: 0;
+
+}
+
+ @media (max-width: 991px) {
+.bloc-left {
+width:100%;
+padding-left: 1.6875rem;
+}
+.wrappera {
+    width: 980px!important;
+}
+ }
+section.left-right div.text h2, section.left-right div.text h3 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    font-weight: 700;
+    color: #001136;
+
+}
+.hh3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ @media (max-width: 1200px) and (min-width: 980px)
+{
+section.left-right div.text h2, section.left-right div.text h3 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+}
+}
+@media (max-width: 767px)
+{
+section.left-right div.img, section.left-right {
+    flex: 1;
+    order: 2;
+    width: 100%;
+    margin-top: 1.875rem;
+}
+section.left-right div.img img {
+    margin: auto;
+    max-width: 600px;
+}
+}
+@media (min-width: 1200px)
+{
+.txtapo {
+    padding-top: 30px;
+}
+}

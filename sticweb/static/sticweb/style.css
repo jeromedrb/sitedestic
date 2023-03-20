@@ -347,10 +347,10 @@ text-decoration: none;
 		color: #ffff;
 		font-size: 1.2em;
 	}
-	section{
+	/*section{
 		padding: 100px;
 
-	}
+	} */
 	div.separateur{
 		background-color: #e3dde7;
 		height: 3px;
@@ -897,7 +897,7 @@ border-radius: 5px;
 
 .col40{
 	width: 40%;
-	padding-top:7%;
+	padding-top:0.2%;
 
 }
 .boxcol40{
@@ -1183,7 +1183,7 @@ div.bareverticall{
 			margin-left: 0px;
 		}
 		section {
-    padding: 0px;
+    padding: 0;
 }
 		.titre-text{
 			font-size: 25px;

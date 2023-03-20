@@ -12,6 +12,7 @@ body {
 .container0 {
   width: 90%;
   margin: 50px auto;
+  background-color: #f4f5ff;
 }
 .heading0 {
   text-align: center;
@@ -125,19 +126,42 @@ h2.title {
     left: 0;
     top: 15px;
 }
-.bg-mutu {
-    background-image: url("images/devap.jpg");
+.hdev{
+background-image: url("images/devap.jpg");
     background-position: 100% 35%;
     background-repeat: no-repeat;
 }
+.hconc{
+ background-image: url("images/hvisu.jpg");
+    background-position: 100% 35%;
+}
+.hrso{
+background-image: url("images/hrso.jpg");
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.hdomo{
+background-image: url("images/bandprodomo.jpg");
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.hmain{
+background-image: url("images/hmain.jpg");
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+
 .bg-crea {
     background-image: url("images/serveur4.jpg");
     background-position: 100% 35%;
     background-repeat: no-repeat;
 }
-
 @media (max-width: 767px)
 {
+    .licard {
+        padding-left: 0;
+
+    }
     .flex-element {
         width: 100%;
         max-width: 100%;
@@ -202,7 +226,7 @@ h2.title {
 }
 @media (max-width: 767px) and (min-width: 450px)
 {
-   .content0 ul {
+   .ulcard {
         width: max-content;
         width: -moz-max-content;
         max-width: 440px;
@@ -212,14 +236,14 @@ h2.title {
 
 }
 
-.content0 ul {
+.ulcard {
     width: max-content;
     width: -moz-max-content;
     margin: 0 auto 0;
     text-align: left;
     list-style-image: none;
 }
-.content0 ul {
+ .ulcard {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -228,16 +252,16 @@ h2.title {
     margin-inline-end: 0px;
     padding-inline-start: 10px;
 }
-.content0 li {
+.licard {
     position: relative;
     font-size: 1rem;
     line-height: 1.625rem;
     font-weight: 400;
     color: #4d5163;
-    padding-left: 25px;
+    padding-left: 2px;
     margin-bottom: 15px;
 }
-.content0 li {
+.licard {
     list-style: none;
 }
 a.btn.btn-orange {
@@ -287,7 +311,7 @@ a.btn {
 @media (max-width: 979px) and (min-width: 768px)
 {
     head0.bg-mutu::before, .bg-crea::before,head0.bg-vps::before {
-        z-index: 1;
+        z-index: 100;
         content: '';
         background-color: #1e499b;
         opacity: .5;
