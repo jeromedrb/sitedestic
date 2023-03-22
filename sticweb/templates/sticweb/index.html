@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/test.css' %}">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -19,9 +18,9 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/styleindexservices.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/headstyle.css' %}">
 	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel = "preconnect" href = "https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 
 
@@ -32,7 +31,8 @@
 	<nav class="headnav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        <i class="fas fa-bars">..</i>
+		  <div class="menuToggle1" onclick="toggleMenu();"></div>
+       <!-- <i class="fas fa-bars">...</i> -->
       </label>
       <label class="logo"><span>S</span>hib'ah Tic Conception</label>
       <ul class="headul">

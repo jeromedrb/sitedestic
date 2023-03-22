@@ -98,5 +98,18 @@ a.active,.anav:hover{
   #check:checked ~ ul{
     left: 0;
   }
+
+
+
 }
 
+.menuToggle1{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background-image: url(images/menu.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		background-size: 30px;
+	}
