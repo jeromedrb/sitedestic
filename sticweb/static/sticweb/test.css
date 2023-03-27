@@ -135,12 +135,17 @@ img{
     }
 
     .hh3 {
-        font-size: 2.05rem;
-        line-height: 2.375rem;
+
+
         font-weight: 700;
         color: #001136;
         padding-bottom: 0.3125rem;
         margin:0;
+
+        text-align: left;
+         /* définir la largeur de votre paragraphe line-height: 2.375rem;*/
+        font-size: 1.35rem; /* ajuster la taille de police selon votre besoin font-size: 1.65rem;*/
+        line-height: 1.5; /* ajuster l'interligne selon votre besoin */
     }
     .noservice{
         font-size: 2.05rem;

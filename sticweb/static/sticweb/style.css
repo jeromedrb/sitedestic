@@ -18,8 +18,8 @@ text-decoration: none;
  }
 	body {
 	margin: 0;
-	font-family : 'Times New Roman', Times, serif;
-
+	/*font-family : 'Times New Roman', Times, serif; */
+    font: 200 18px/28px artifakt-element,sans-serif;
 	}
 
 
