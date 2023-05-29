@@ -4,7 +4,19 @@
 
 	margin: 0px;
     padding: 0px;
+
+
+
+text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
+
+
+ :root {
+ 	--colr1: #D86584
+ }
+
 
 
  :root {
@@ -12,8 +24,8 @@
  }
 	body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+ font: 200 18px/28px artifakt-element,sans-serif;
+    font-size: 22px;
     letter-spacing: 0.5px;
     line-height: 1.5;
     color: #1c1b1b;
