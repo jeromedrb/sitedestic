@@ -2,27 +2,27 @@
 
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Shib'ah Tic Conception</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/test.css' %}">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>Shib'ah Tic Conception</title>
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/style.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/stylebaspage.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/apropos.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/test.css' %}">
 
 
-	<!-- Swiper CSS
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	-->
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/style2.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/styleindexservices.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'sticweb/headstyle.css' %}">
-	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	-->
+   <!-- Swiper CSS
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   -->
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/style2.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/styleindexservices.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'sticweb/headstyle.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   -->
 
 
 
@@ -31,100 +31,100 @@
 
 </head>
 <body>
-	<nav class="headnav">
+   <nav class="headnav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-		  <div class="menuToggle1" onclick="toggleMenu();"></div>
+        <div class="menuToggle1" onclick="toggleMenu();"></div>
        <!-- <i class="fas fa-bars">...</i> -->
       </label>
-      <label class="logo"><span>S</span>hib'ah Tic Conception</label>
+      <label class="logo"><span>S</span>hib'ah TechLab</label>
       <ul class="headul">
         <li class="headli"><a class="active anav" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
 
-				<li class="headli"><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
-				<li class="headli"> <a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
-				<li class="headli"><a class="anav"  href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
-				<li class="headli"><a class="anav"  href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
-				<li class="headli"><a class="anav"  href="#" onclick="toggleMenu();">Boutique</a></li>
-				<li class="headli"><a class="anav"  href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a></li>
+            <li class="headli"><a class="anav" href="#apropos" onclick="toggleMenu();">A propos</a></li>
+            <li class="headli"> <a class="anav"  href="{% url 'solution' %}" onclick="toggleMenu();">Développement</a></li>
+            <li class="headli"><a class="anav"  href="#Cablage" onclick="toggleMenu();">Cablage</a></li>
+            <li class="headli"><a class="anav"  href="#mainten" onclick="toggleMenu();">Maintenance</a></li>
+            <li class="headli"><a class="anav"  href="#" onclick="toggleMenu();">Boutique</a></li>
+            <li class="headli"><a class="anav"  href="#contact" class="btn-reserve"onclick="toggleMenu();">Contacts</a></li>
       </ul>
     </nav>
 
-	<div class="slider">
-		<!-- fade css -->
-		<div class="myslide fade" >
-			<div class="txt ">
-				<!--
-				<div class="blockadmin glow">
+   <div class="slider">
+      <!-- fade css -->
+      <div class="myslide fade" >
+         <div class="txt ">
+            <!--
+            <div class="blockadmin glow">
 
-				</div> -->
-				<!--	<img src="{% static 'sticweb/images/DEvpro.png' %}" alt="" class="imgs1">-->
+            </div> -->
+            <!--   <img src="{% static 'sticweb/images/DEvpro.png' %}" alt="" class="imgs1">-->
 
-				<h1 class="h1sli">Conception de logiciel de gestion</h1>
-				<p>Logiciel PC , MAC,Android et IOS</p>
+            <h1 class="h1sli">Conception de logiciel de gestion</h1>
+            <p>Logiciel PC , MAC,Android et IOS</p>
 
-			</div>
+         </div>
 <!--
-			<img src="{% static 'sticweb/images/bacgrund1.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
-		</div>
+         <img src="{% static 'sticweb/images/bacgrund1.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
+      </div>
 
-		<div class="myslide fade">
-			<div class="txt">
-				<!--
-				<img src="{% static 'sticweb/images/site pro.png' %}" alt="" class="imgs2"> -->
-				<h1 class="h1sli">Conception de site web</h1>
-				<p>Des sites web pro au gout du jour</p>
-			</div>
-			<!--
-			<img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
-		</div>
+      <div class="myslide fade">
+         <div class="txt">
+            <!--
+            <img src="{% static 'sticweb/images/site pro.png' %}" alt="" class="imgs2"> -->
+            <h1 class="h1sli">Conception de site web</h1>
+            <p>Des sites web pro au gout du jour</p>
+         </div>
+         <!--
+         <img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
+      </div>
 
-		<div class="myslide fade">
-			<div class="txt">
-				<!--
-				<img src="{% static 'sticweb/images/installation.png' %}" alt="" class="imgs1"> -->
-				<h1 class="h1sli">Maintenance informatique</h1>
-				<p>Hardward solution</p>
-			</div>
-			<!-- <img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
-		</div>
+      <div class="myslide fade">
+         <div class="txt">
+            <!--
+            <img src="{% static 'sticweb/images/installation.png' %}" alt="" class="imgs1"> -->
+            <h1 class="h1sli">Maintenance informatique</h1>
+            <p>Hardward solution</p>
+         </div>
+         <!-- <img src="{% static 'sticweb/images/bacgrunSite.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
+      </div>
 
-		<div class="myslide fade">
-			<div class="txt">
-			<!--	<img src="{% static 'sticweb/images/visuel qualité.png' %}" alt="" class="imgs2"> -->
-				<h1 class="h1sli">Conception de visuel</h1>
-				<p>Conception de  logo ,carte de visite, mariage,... </p>
-			</div>
-			<!--<img src="{% static 'sticweb/images/bacgvisueml.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
-		</div>
+      <div class="myslide fade">
+         <div class="txt">
+         <!--   <img src="{% static 'sticweb/images/visuel qualité.png' %}" alt="" class="imgs2"> -->
+            <h1 class="h1sli">Conception de visuel</h1>
+            <p>Conception de  logo ,carte de visite, mariage,... </p>
+         </div>
+         <!--<img src="{% static 'sticweb/images/bacgvisueml.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
+      </div>
 
-		<div class="myslide fade">
-			<div class="txt">
-			<!--		<img src="{% static 'sticweb/images/maintenace.png' %}" alt="" class="imgs2"> -->
-				<h1 class="h1sli">Maintenance informatique</h1>
+      <div class="myslide fade">
+         <div class="txt">
+         <!--      <img src="{% static 'sticweb/images/maintenace.png' %}" alt="" class="imgs2"> -->
+            <h1 class="h1sli">Maintenance informatique</h1>
 
-				<p>Cablage, configuration et maintenance</p>
+            <p>Cablage, configuration et maintenance</p>
 
-			</div>
-			<!--<img src="{% static 'sticweb/images/bacgrMainten.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
-		</div>
-		<!-- /fade css -->
+         </div>
+         <!--<img src="{% static 'sticweb/images/bacgrMainten.jpg' %}" style="width: 100%; height: 100%;" class="imgsli"> -->
+      </div>
+      <!-- /fade css -->
 
-		<!-- onclick js
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	-->
-		<div class="dotsbox" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-		<!-- /onclick js -->
-	</div>
+      <!-- onclick js
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   -->
+      <div class="dotsbox" style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <!-- /onclick js -->
+   </div>
 
-	<script src="{% static 'sticweb/jsfile.js' %}"></script>
+   <script src="{% static 'sticweb/jsfile.js' %}"></script>
 
  <section class="apo">
       <div class="contenuapo">
@@ -153,10 +153,10 @@
                   <!--      <img    src="logo.jpg"  alt=""  class="imgt"/> -->
                   </div>
                   <div class="contenttxt">
-                      <p class="txt-yellow pt" style="text-align: justify;">Vous aussi devenez partenaire de <span class="hide979">Shib'ah Tic Conception </span>aujourd'hui.</p>
+                      <p class="txt-yellow pt" style="text-align: justify;">Vous aussi devenez partenaire de <span class="hide979">Shib'ah TechLab</span>aujourd'hui.</p>
                       <p class="accroche pt "  style="text-align: justify;">Nos services englobent tous les aspects de l'informatique et du numérique, du développement de logiciels personnalisés
                           à la configuration et au câblage de réseaux, en passant par la conception graphique. <br>
-                     <b> Shib'ah Tic Conception </b> est un acteur incontournable
+                     <b> Shib'ah TechLab</b> est un acteur incontournable
                           pour votre développement et votre réussite. Rejoignez-nous dès aujourd'hui et devenez notre partenaire privilégié.</p>
                       <p class="accroche pt"  style="text-align: justify;"><a class="colorbox950x710" href="#contact">En savoir plus</a></p>
                       </div>
@@ -284,14 +284,14 @@
 
 
 
-		<div class="separateur">
+      <div class="separateur">
 
-		</div>
+      </div>
 
-		<div class="titre">
-			<h2 class="titre-texte"><span>Solutions déjà disponible</span></h2>
-			<p>Nous avons déja des solutions disponible sur le marché. <br> </p>
-		</div>
+      <div class="titre">
+         <h2 class="titre-texte"><span>Solutions déjà disponible</span></h2>
+         <p>Nous avons déja des solutions disponible sur le marché. <br> </p>
+      </div>
 
 
 
@@ -299,20 +299,20 @@
 
         <div class="slide-content">
             <div class="swiper-wrapper">
-				{% for Solutions in solutions %}
+            {% for Solutions in solutions %}
                 <div class="card swiper-slide">
                     <div class="image-content">
-						{% if Solutions.image %}
-    			<img src="{{ Solutions.image.url }}" alt="" >
-					{% endif %}
+                  {% if Solutions.image %}
+             <img src="{{ Solutions.image.url }}" alt="" >
+               {% endif %}
 
 
-					</div>
+               </div>
                     <div class="card-content">
                         <h2 class="title">{{ Solutions.name }}</h2>
                         <p class="desc">{{ Solutions.title }}</p>
 
-						<button class="button"><a href="{{ Solutions.get_absolute_url }}" style="text-decoration: none; color:white;">voir plus </a></button>
+                  <button class="button"><a href="{{ Solutions.get_absolute_url }}" style="text-decoration: none; color:white;">voir plus </a></button>
                     </div>
                 </div>
   {% endfor %}
@@ -321,7 +321,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
-	 </div>
+    </div>
 
 
 
@@ -362,13 +362,13 @@
 
 <!--
 
-	<div class="cover">
-	<img class="imglogo" src="logopng.png"/>
-	<div class="coverContact">
+   <div class="cover">
+   <img class="imglogo" src="logopng.png"/>
+   <div class="coverContact">
 <p><a href="mailto=shibaticconception.com?subject=Depuis%20ici">shibaticconception.com<a/></p>
 <p><a href="tel=+22664367284">+2266565656<a/></p>
 
-	</div>
+   </div>
 
 
 <h1>SHIB'AH TIC CONCEPTION<h1/>
@@ -378,56 +378,56 @@
 </div>
 </div>
 
-<div class="Section1">	  -->
+<div class="Section1">   -->
 
-<!--</div>	-->
+<!--</div> -->
 
 <!--<img style="Width:100%" src="div1.png" />-->
 <section class='SectionProjet prjtmain' id="mainten" >
 
-	<img src="{% static 'sticweb/images/m_1-removebg-preview.png' %}" class="col40" style="padding-left: 16px; border-radius: 15px;">
-	<div class="col60 float-right co60" style="padding-left: 5px; text-align: justify;">
+   <img src="{% static 'sticweb/images/m_1-removebg-preview.png' %}" class="col40" style="padding-left: 16px; border-radius: 15px;">
+   <div class="col60 float-right co60" style="padding-left: 5px; text-align: justify;">
 <h2 class="titre-texte" style="  text-align: justify;" ><span>Maintenance Informatique</span></h2>
 <h3 class="titre-h3" style="  text-align: justify;" ><span>Hardware and software solution</span></h3>
 
-			<p class="titre-p" style=" text-align: justify;" >
-			 De la résolution de pannes matérielles aux problèmes logiciels complexes, nos techniciens se font un devoir de fournir le meilleur service possible pour vous garantir un fonctionnement optimal de votre équipement.
+         <p class="titre-p" style=" text-align: justify;" >
+          De la résolution de pannes matérielles aux problèmes logiciels complexes, nos techniciens se font un devoir de fournir le meilleur service possible pour vous garantir un fonctionnement optimal de votre équipement.
 
-		Chez Shib'ah Tic Conception, nous prenons à cœur la satisfaction de nos clients et nous mettons tout en œuvre pour que chaque interaction avec notre équipe de maintenance soit agréable et fructueuse. Nous croyons que chaque client mérite un sourire et un service personnalisé de qualité supérieure.
+      Chez Shib'ah Tic Conception, nous prenons à cœur la satisfaction de nos clients et nous mettons tout en œuvre pour que chaque interaction avec notre équipe de maintenance soit agréable et fructueuse. Nous croyons que chaque client mérite un sourire et un service personnalisé de qualité supérieure.
 
-			Nous sommes déterminés à construire un avenir meilleur pour nos clients et à leur fournir des solutions technologiques avancées pour améliorer leur efficacité et leur productivité.
+         Nous sommes déterminés à construire un avenir meilleur pour nos clients et à leur fournir des solutions technologiques avancées pour améliorer leur efficacité et leur productivité.
                 Si vous cherchez une équipe de maintenance informatique fiable et compétente, n'hésitez pas à nous contacter pour discuter de vos besoins.
-			  <br>
+           <br>
 
 </p>
 <div>
 <div>
-	<a href="#contact" class="btnContactNs aanim" >
-		<span class="awraper"> </span>
+   <a href="#contact" class="btnContactNs aanim" >
+      <span class="awraper"> </span>
 
-			<span class="aText">Nous contacter </span>
+         <span class="aText">Nous contacter </span>
 
-	</a>
+   </a>
 </div>
 </div>
-	</div>
-	</section>
+   </div>
+   </section>
 
 
 
 
 
-	<div class='Cablage' id="Cablage">
+   <div class='Cablage' id="Cablage">
 
-		<img src="{% static 'sticweb/images/resoos.jpg' %}" class="col40" style="padding-right: 5px;">
-		<div class="col60 float-right " style="padding-left: 1px; ">
+      <img src="{% static 'sticweb/images/resoos.jpg' %}" class="col40" style="padding-right: 5px;">
+      <div class="col60 float-right " style="padding-left: 1px; ">
 <h2 class="titre-texte" style=" padding-left: 10px; text-align: justify;">
-		<span>	Cablage réseau et installation de systeme domotique </span>
-		</h2>
-			<h3 class="titre-h3" style=" padding-left: 10px; text-align: justify; color: #c8cbc9;" >
-				<span>Découvrez la tranquillité d'esprit et le confort </span></h3>
-				<p class="titre-p" style=" text-align: justify; padding-left: 10px;">
-					Si vous cherchez à installer une nouvelle infrastructure réseau, vous aurez
+      <span> Cablage réseau et installation de systeme domotique </span>
+      </h2>
+         <h3 class="titre-h3" style=" padding-left: 10px; text-align: justify; color: #c8cbc9;" >
+            <span>Découvrez la tranquillité d'esprit et le confort </span></h3>
+            <p class="titre-p" style=" text-align: justify; padding-left: 10px;">
+               Si vous cherchez à installer une nouvelle infrastructure réseau, vous aurez
 besoin de l'expertise de professionnels
 qualifiés pour mener à bien votre projet de maintenance réseau.
 Chez Shib"ah TIC Conception, nous avons l'expertise
@@ -443,80 +443,80 @@ de votre maison depuis votre smartphone ou même en utilisant votre voix.
 Optez dès aujourd'hui pour l'innovation et la technologie de pointe avec
 Shibaticconception, et découvrez la tranquillité d'esprit et le confort que nous
 pouvons vous offrir.
-					<br> Merci de nous faire confiance
-					<div>
+               <br> Merci de nous faire confiance
+               <div>
 <div>
-	<a href="#contact" class="btnContactNs aanim" >
-		<span class="awraper"> </span>
+   <a href="#contact" class="btnContactNs aanim" >
+      <span class="awraper"> </span>
 
-			<span class="aText" style="">Nous contacter </span>
+         <span class="aText" style="">Nous contacter </span>
 
-	</a>
+   </a>
 </div>
 </div>
-								</p>
+                        </p>
 
 
 
-		</div>
-		</div>
+      </div>
+      </div>
 
 
 
-	<div class='SectionDesign'>
+   <div class='SectionDesign'>
 
-		<img src="{% static 'sticweb/images/creation_graphique.png' %}" class="col40">
-		<div class="col60 float-right" style="padding-left: 16px;">
+      <img src="{% static 'sticweb/images/creation_graphique.png' %}" class="col40">
+      <div class="col60 float-right" style="padding-left: 16px;">
 <h2 class="titre-texte" style=" text-align: justify;">
-		<span> Conception de visuel </span>
-		</h2>
-			<h3 class="titre-h3" style="text-align: justify; color:#1c3350;" >
-				<span> <br> <b> Des visuels de qualité au gout du jour </b></span></h3>
-		<p class="titre-p" style="text-align: justify; color:#1c3377;">
-			Shib'ah Tic Conception offre des services de conception graphique de qualité supérieure pour
-			répondre à tous vos besoins en matière de design, tels que <span style="color:#F56926;"> la création d'affiches, de logos,
-			de cartes de visite, de montages vidéo et plus encore. </span> Nous sommes fiers de notre équipe de
-			graphistes talentueux et passionnés qui créent des designs uniques et innovants pour améliorer
-			l'image de votre entreprise ou de votre marque. Contactez-nous dès aujourd'hui pour découvrir
-			comment nous pouvons vous aider
-			à donner vie à vos idées de conception.
-	<br><br>
-			 Vous aussi Exigez la qualité, <span style="color: rgb(10, 10, 10);"> <b> exigez shib'ah Tic Conception</b> </span>.
+      <span> Conception de visuel </span>
+      </h2>
+         <h3 class="titre-h3" style="text-align: justify; color:#1c3350;" >
+            <span> <br> <b> Des visuels de qualité au gout du jour </b></span></h3>
+      <p class="titre-p" style="text-align: justify; color:#1c3377;">
+         Shib'ah TechLaboffre des services de conception graphique de qualité supérieure pour
+         répondre à tous vos besoins en matière de design, tels que <span style="color:#F56926;"> la création d'affiches, de logos,
+         de cartes de visite, de montages vidéo et plus encore. </span> Nous sommes fiers de notre équipe de
+         graphistes talentueux et passionnés qui créent des designs uniques et innovants pour améliorer
+         l'image de votre entreprise ou de votre marque. Contactez-nous dès aujourd'hui pour découvrir
+         comment nous pouvons vous aider
+         à donner vie à vos idées de conception.
+   <br><br>
+          Vous aussi Exigez la qualité, <span style="color: rgb(10, 10, 10);"> <b> exigez shib'ah Tic Conception</b> </span>.
 
-		<br>
-		</p>
+      <br>
+      </p>
 
 <div>
 <div>
-	<a href="#contact" class="btnContactNs aanim" >
-		<span class="awraper"> </span>
+   <a href="#contact" class="btnContactNs aanim" >
+      <span class="awraper"> </span>
 
-			<span class="aText" style="color:#1c3350;">Nous contacter </span>
+         <span class="aText" style="color:#1c3350;">Nous contacter </span>
 
-	</a>
+   </a>
 </div>
 </div>
 
-		</div>
+      </div>
 
-		</div>
+      </div>
 
 
 <div class="sectionl">
-	<div class="fram">
-		<table style="width: 100%;">
-			<tr>
-				<td valign="top" align="center">
-					<img src="{% static 'sticweb/images/logo.jpg' %}" style="width: 100px;">
-				</td>
-				<td>
-					<p>Votre meilleure allié  <br>
-					Exigez des pro pour numeriser votre organisation <br>
-					<a href=""></a></p>
-				</td>
-			</tr>
-		</table>
-	</div>
+   <div class="fram">
+      <table style="width: 100%;">
+         <tr>
+            <td valign="top" align="center">
+               <img src="{% static 'sticweb/images/logo.jpg' %}" style="width: 100px;">
+            </td>
+            <td>
+               <p>Votre meilleure allié  <br>
+               Exigez des pro pour numeriser votre organisation <br>
+               <a href=""></a></p>
+            </td>
+         </tr>
+      </table>
+   </div>
 </div>
 
 <script src="{% static 'sticweb/slider.js' %}"></script>
@@ -542,11 +542,11 @@ pouvons vous offrir.
             </div>
             <div class="text" style="text-align: center;">
                 <p>Le logiciel GF-PRO s'est avéré être une solution parfaitement adaptée à nos besoins en matière de formation
-					professionnelle, ce qui a suscité une grande satisfaction de la part de notre équipe. Je suis
-					particulièrement émerveillé par la capacité de l'entreprise à maintenir une innovation constante
-					dans la conception de ses solutions, ce qui nous permet de rester à la pointe de notre domaine
-					d'activité.
-				</GF-PRO>.</p>
+               professionnelle, ce qui a suscité une grande satisfaction de la part de notre équipe. Je suis
+               particulièrement émerveillé par la capacité de l'entreprise à maintenir une innovation constante
+               dans la conception de ses solutions, ce qui nous permet de rester à la pointe de notre domaine
+               d'activité.
+            </GF-PRO>.</p>
                 <h3>Souleymana SANOU</h3>
             </div>
         </div>
@@ -555,9 +555,9 @@ pouvons vous offrir.
                 <img src="./imagetemoins/t3.jpg" alt="">
             </div>
             <div class="text">
-                <p>Depuis deux ans, je confie mes travaux de maintenance à Shib'ah Tic conception et j'ai toujours
-					été entièrement satisfait de leurs solutions,
-					qu'il s'agisse de résoudre des pannes matérielles, des problèmes logiciels ou système.</p>
+                <p>Depuis deux ans, je confie mes travaux de maintenance à Shib'ah TechLab et j'ai toujours
+               été entièrement satisfait de leurs solutions,
+               qu'il s'agisse de résoudre des pannes matérielles, des problèmes logiciels ou système.</p>
                 <h3>Jean Noel</h3>
             </div>
         </div>
@@ -566,121 +566,121 @@ pouvons vous offrir.
 
 
 <section class="contact" id="contact">
-	<div class="titre noir">
-		<h2 class="titre-text"><span>C</span>ontact</h2>
-		<p>Veuillez nous laisser un message et notre equipe prendra attache avec vous dans les 12h qui suivent</p>
-	</div>
-	<div class="formulaire">
-	<form method="post" class="formulair">
+   <div class="titre noir">
+      <h2 class="titre-text"><span>C</span>ontact</h2>
+      <p>Veuillez nous laisser un message et notre equipe prendra attache avec vous dans les 12h qui suivent</p>
+   </div>
+   <div class="formulaire">
+   <form method="post" class="formulair">
     {% csrf_token %}
-	<div class="contactform">
-		<h3>Envoyer un message</h3>
-		<div class="inputboite" >
-			{{ form.name.label_tag }}
-			{{ form.name }}
+   <div class="contactform">
+      <h3>Envoyer un message</h3>
+      <div class="inputboite" >
+         {{ form.name.label_tag }}
+         {{ form.name }}
 
-		</div>
-		<div class="inputboite">
-		   {{ form.telephone.label_tag }}
-			{{ form.telephone }}
-		</div>
-		<div class="inputboite">
-		   {{ form.email.label_tag }}
-			{{ form.email }}
-		</div>
-		<div class="inputboite">
-		   {{ form.message.label_tag }}
-			{{ form.message }}
-		</div>
-		<div class="inputboite">
+      </div>
+      <div class="inputboite">
+         {{ form.telephone.label_tag }}
+         {{ form.telephone }}
+      </div>
+      <div class="inputboite">
+         {{ form.email.label_tag }}
+         {{ form.email }}
+      </div>
+      <div class="inputboite">
+         {{ form.message.label_tag }}
+         {{ form.message }}
+      </div>
+      <div class="inputboite">
 
-			<input type="submit" value="envoyer">
-		</div>
-	</div>
-		</form>
-		</div>
+         <input type="submit" value="envoyer">
+      </div>
+   </div>
+      </form>
+      </div>
 </section>
-		<section class="Tel" id="Tel">
+      <section class="Tel" id="Tel">
 
-	<div class="contenu">
-	<div class="box">
-		<div>
-			<p >Adresse</p> <br>
-		<a href="" >Burkina faso</a> <br>
-		<a href="">Bobo-Dioulasso</a>
-		</div>
+   <div class="contenu">
+   <div class="box">
+      <div>
+         <p >Adresse</p> <br>
+      <a href="" >Burkina faso</a> <br>
+      <a href="">Bobo-Dioulasso</a>
+      </div>
 
-	</div>
-	<div class="box">
-		<div>
-			<p >Téléphone : <br> <br> </p>
-			<a href="tel=+22664367284" >+22664367284<a/>
+   </div>
+   <div class="box">
+      <div>
+         <p >Téléphone : <br> <br> </p>
+         <a href="tel=+22664367284" >+22664367284<a/>
 
-		</div>
+      </div>
 
-	</div>
-	<div class="box">
-		<div>
-			<p >Email : <br> <br> </p>
-			<a href="mailto=shibaticconception.com?subject=Depuis%20ici" >shibaticconception@gmail.com<a/>
+   </div>
+   <div class="box">
+      <div>
+         <p >Email : <br> <br> </p>
+         <a href="mailto=shibaticconception.com?subject=Depuis%20ici" >shibaticconception@gmail.com<a/>
 
-		</div>
-	</div>
-	<div class="box">
-		<div class="box1">
-			<p >Suivez nous sur  <br> <br> </p>
-			<ul class="basul">
-				<li class="basli">
-					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
-						<img src="{% static 'sticweb/images/facebook.png' %}" alt="">
-					</a>
-				</li>
-				<li class="basli">
-					<a href="https://wa.me/+22664367284" target="_blank">
-						<img src="{% static 'sticweb/images/whatsapp.png' %}" alt="">
-					</a>
+      </div>
+   </div>
+   <div class="box">
+      <div class="box1">
+         <p >Suivez nous sur  <br> <br> </p>
+         <ul class="basul">
+            <li class="basli">
+               <a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
+                  <img src="{% static 'sticweb/images/facebook.png' %}" alt="">
+               </a>
+            </li>
+            <li class="basli">
+               <a href="https://wa.me/+22664367284" target="_blank">
+                  <img src="{% static 'sticweb/images/whatsapp.png' %}" alt="">
+               </a>
 
-				</li>
+            </li>
 
-				<li class="basli">
-					<a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
-						<img src="{% static 'sticweb/images/instagram.png' %}" alt="">
-					</a>
+            <li class="basli">
+               <a href="https://www.facebook.com/people/Shibah-Tic-Conception/100089448139861/?mibextid=ZbWKwL" target="_blank">
+                  <img src="{% static 'sticweb/images/instagram.png' %}" alt="">
+               </a>
 
 
 
-				</li>
-				<li class="basli">
-					<a href="https://www.linkedin.com/in/shibah-tic-conception-83949a263/" target="_blank">
-						<img src="{% static 'sticweb/images/linkedin.png' %}" alt="">
-					</a>
-				</li>
-			</ul>
+            </li>
+            <li class="basli">
+               <a href="https://www.linkedin.com/in/shibah-tic-conception-83949a263/" target="_blank">
+                  <img src="{% static 'sticweb/images/linkedin.png' %}" alt="">
+               </a>
+            </li>
+         </ul>
 
-		</div>
-	</div>
+      </div>
+   </div>
 
-	</div>
-	</section>
+   </div>
+   </section>
 
 <div class="copyright">
 <p>
-	©shiba'ah Tic Conception. Tous droits réservés - Politique de confidentialité
-	- Mentions Légales <br> - Cookies
+   ©shiba'ah Tic Conception. Tous droits réservés - Politique de confidentialité
+   - Mentions Légales <br> - Cookies
 </p>
 </div>
 <script type="text/javascript">
-	window.addEventListener('scroll', function(){
-		const header =document.querySelector('header');
-		header.classList.toggle("sticky", window.scrollY > 0 );
-	});
+   window.addEventListener('scroll', function(){
+      const header =document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0 );
+   });
 
-	function toggleMenu(){
-		const tmenuToggle = document.querySelector('.menuToggle');
-		const navbar = document.querySelector('.navbar');
-		navbar.classList.toggle('active');
-		menuToggle.classList.toggle('active');
-	}
+   function toggleMenu(){
+      const tmenuToggle = document.querySelector('.menuToggle');
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+   }
 </script>
 
 
@@ -689,3 +689,4 @@ pouvons vous offrir.
 
 </body>
 </html>
+
