@@ -49,6 +49,7 @@ a.active,.anav:hover{
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  margin-top: 20;
 }
 #check{
   display: none;
