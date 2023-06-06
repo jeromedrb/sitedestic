@@ -6,7 +6,7 @@
     padding: 0px;
 
 
-
+font: 200 18px/28px artifakt-element,sans-serif;
 text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -295,11 +295,6 @@ height:100px;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin: 0 0 10px;
-
-    display: inline;
-    float: left;
-    width: 100%;
 }
 
 div.bareverticall{

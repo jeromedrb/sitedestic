@@ -1295,8 +1295,8 @@ background-color: transparent;
 		padding-top: 3px;
 		padding-bottom: 3px;
 		box-sizing: border-box;
-
-		}
+background : url("images/cotejnmobil.png") no-repeat center/100% 100%;
+}
 		.Cablage{
 			padding-left: 6px;
 		padding-right: 6px;
