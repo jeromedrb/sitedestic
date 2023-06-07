@@ -33,6 +33,7 @@ header{
 	}
 	.logo span{
 		color: #fb911f;
+		    font-size: 2em;
 	}
 
 	.navbar{
@@ -226,6 +227,7 @@ margin: 20px 0px 20px;
 }
 span{
     color: #2ecc71;
+        font-size: 2em;
 }
 .container .hero-text h3{
 color: #2ecc71;
