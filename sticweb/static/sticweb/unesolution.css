@@ -4,10 +4,17 @@ margin: 0;
 box-sizing: border-box;
 font: 200 18px/28px artifakt-element,sans-serif;
 text-decoration: none;
+scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
 }
 body{
     overflow-x: hidden;
     background-color: #1C3350;
+font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: #1c1b1b;
 
 }
 header{
@@ -23,7 +30,7 @@ header{
 		align-items: center;
 		transition: 0.5s;
 		background-color: #0c313f;
-		height: 60px;
+		height: 85px;
 	}
 	.logo{
 		color: #fff;
@@ -43,7 +50,7 @@ header{
 	}
 	.navbar li{
 		list-style: none;
-		margin-top: 10px;
+		margin-top: 35px;
 	}
 	.navbar a{
 		color: #fff;
@@ -53,10 +60,10 @@ header{
 
 	}
 	.btn-reserve{
-		padding: 10px 20px;
-		background: #fb911f;
-
-	   text-transform:uppercase ;
+padding: 25px 40px;
+background: #fb911f;
+text-transform:uppercase ;
+margin:20;
 	}
 	header .navbar li a:hover{
 		color: #fb911f;
@@ -183,7 +190,7 @@ header{
   .form-group  label {
         display: block;
         margin-bottom: 5px;
-        font-weight: bold;
+
     }
   .form-group  input,
     select {
@@ -313,6 +320,13 @@ box-shadow:  27px 27px 39px #131618,
 }
 
 @media (max-width: 991px) {
+body {
+    text-align: center;
+}
+span{
+font-size: 1em;
+font-style: oblique;
+}
 header,
 	header.sticky{
 		padding: 10px 20px;
@@ -337,22 +351,24 @@ header,
   max-width: 800px;
   margin: 3px;
   padding: 10px 20px;
+  height:1200px;
 
 }
 .popup-box h2{
   font-size: 2.6em;
   font-weight: 1000;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .popup-box p{
-  font-size: 1.4em;
-  margin-bottom: 10px;
+      font-size: 2.4em;
+    margin-bottom: 50px;
+    line-height: 1.2;
 }
 .btn {
 
         padding: 12px 20px;
-        font-size: 26px;
+        font-size: 46px;
         border-radius: 5px;
     }
 
@@ -364,7 +380,7 @@ header,
 
   .form-group  label {
         margin-bottom: 5px;
-
+font-size: 35;
     }
 
   .form-group  input,
@@ -372,13 +388,14 @@ header,
         width: 100%;
         height: 50px;
         padding: 4px;
-        font-size: 16px;
+        font-size: 35px;
+        height: 70px;
 
     }
 	header .navbar li a {
 		text-decoration: none;
 		color: #000;
-		font-size: 1.6em;
+		font-size: 2.2em;
 		font-weight: 300;
 	}
 
@@ -468,7 +485,7 @@ line-height: 1.1;
     line-height: 1.6;
     font-size: 35px;
     margin-bottom: 5px;
-    font-family: Times New Roman;
+    font: 200 38px/80px artifakt-element,sans-serif;
 }
 .hero{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/foliofond.jpg);

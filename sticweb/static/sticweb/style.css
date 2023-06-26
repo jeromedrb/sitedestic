@@ -3,10 +3,8 @@
 *{
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-
 	margin: 0px;
     padding: 0px;
-
 text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -15,6 +13,11 @@ text-decoration: none;
   body{
   text-align: justify;
   }
+
+.temoignage .contenu .box .text p{
+text-align: justify;
+padding: 4px;
+}
 }
 
  :root {
@@ -27,13 +30,11 @@ text-decoration: none;
 
 	}
 
-
-
-
 	.slider{
 		position: relative;
 		width: 100%;
-		background: #2c3e50; /* darckblue */
+	/* 	background: #2c3e50; darckblue */
+	background : url("images/fondhead.jpg") no-repeat center/100% 100%;
 		padding-top:30px;
 	}
 	.myslide{
@@ -443,7 +444,7 @@ box-shadow:  12px 12px 28px #061a21,
     color: #fff;
     /*font-family:Times New Roman;*/
     font-size: 18px;
-    font-weight: 80;
+    font-weight: 100;
     line-height: 27px;
     padding-left: 10px;
     padding-right: 30px;
@@ -667,10 +668,6 @@ flex-grow: 1;
     font-weight: 600;
 }
 
-.temoignage .contenu .box .text p{
-text-align: justify;
-padding: 4px;
-}
 	.contact{
 		background-image: url('images/fonddfff.png');
 		background-repeat: no-repeat;
@@ -1258,7 +1255,6 @@ background-color: transparent;
 		height: 400px;
 	}
 		.myslide{
-
 		height: 400px;
 		display: none;
 		overflow: hidden;
@@ -1267,7 +1263,6 @@ background-color: transparent;
 	.txt{
 		letter-spacing: 1px;
 		line-height: 35px;
-
 	}
 .dot{
 		display: inline-block;
@@ -1283,15 +1278,13 @@ background-color: transparent;
 		font-size: 30px;
 		margin-bottom: 10px;
 		text-decoration: solid;
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+		font-family: artifakt-element,sans-serif;
 	}
 	.txt p{
 		font-weight: bold;
 		font-size: 15px;
 		color: rgb(249, 252, 249);
-		text-align: justify;
+		text-align:center;
 		font-family:Arial, Helvetica, sans-serif;
 	}
 	.SectionProjet{
@@ -1358,3 +1351,13 @@ background : url("images/cotejnmobil.png") no-repeat center/100% 100%;
 	}
 
 	}
+
+
+@media screen and (min-width: 500px) {
+  .main{
+	margin-top: 0%;
+}
+.h1sli{
+  line-height: 45px;
+}
+}
