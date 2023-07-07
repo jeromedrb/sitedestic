@@ -8,16 +8,10 @@ background-color: #f4f5ff;
 }
 
 .ap{
-    font-style: normal;
-    font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-stretch: normal;
-    color: ##000000;
-    line-height: 22px;
-    font-size: 100%;
-    text-align:justify;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #000000;
+    text-align:left;
 
 }
 .bloc-left {
