@@ -1253,6 +1253,8 @@ background-color: transparent;
 		}
 	.slider{
 		height: 400px;
+    background: url(images/bando1pc.png) no-repeat center/100% 100%;
+
 	}
 		.myslide{
 		height: 400px;
@@ -1274,7 +1276,7 @@ background-color: transparent;
 		cursor: pointer;
 	}
 	.txt h1{
-		color: #f59b3a; /* blue */
+		color: #ff6100; /* blue */
 		font-size: 30px;
 		margin-bottom: 10px;
 		text-decoration: solid;
@@ -1294,7 +1296,7 @@ background-color: transparent;
 		padding-top: 3px;
 		padding-bottom: 3px;
 		box-sizing: border-box;
-background : url("images/cotejnmobil.png") no-repeat center/100% 100%;
+background : url("images/fd1.png") no-repeat center/100% 100%;
 }
 		.Cablage{
 			padding-left: 6px;
@@ -1310,6 +1312,7 @@ background : url("images/cotejnmobil.png") no-repeat center/100% 100%;
 		padding-right: 6px;
 		padding-top: 4px;
 		padding-bottom: 4px;
+		background: url(images/designmbl.png) no-repeat
 
 		}
 
