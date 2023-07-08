@@ -114,6 +114,9 @@ section.left-right div.img img {
     margin: auto;
     max-width: 600px;
 }
+.ap{
+text-align: center;
+}
 }
 @media (min-width: 1200px)
 {
@@ -121,3 +124,4 @@ section.left-right div.img img {
     padding-top: 30px;
 }
 }
+
